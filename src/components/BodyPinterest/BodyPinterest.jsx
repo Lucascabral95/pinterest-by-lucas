@@ -171,8 +171,6 @@
 //     );
 // }
 
-
-import { BsThreeDots } from "react-icons/bs";
 import React, { useEffect, useState } from "react";
 import { IoSave } from "react-icons/io5";
 import "./BodyPinterest.scss";
@@ -188,8 +186,7 @@ export default function BodyPinterest() {
     const [imagen, setImagen] = useState([]);
     const [noImages, setNoImages] = useState(false);
     const [loading, setLoading] = useState(true);
-    const { busqueda, infoCurrentPhoto, setInfoCurrentPhoto, setImagenesLocalStorage, cantidadFotos } = storeZustand();
-
+    const { busqueda, setInfoCurrentPhoto, setImagenesLocalStorage, cantidadFotos, setInfoCurrentPhoto2 } = storeZustand();
 
     const guardarEnFavoritos = (link) => {
         const datosParseados = JSON.parse(localStorage.getItem('imagenes')) || [];
@@ -206,34 +203,6 @@ export default function BodyPinterest() {
             toast.success("Imagen agregada a favoritos.");
         }
     };
-
-    // const handleImageClick = (value) => {
-    //     setInfoCurrentPhoto([
-    //         ...infoCurrentPhoto,
-    //         {
-    //             // urls: value.urls.regular || "No data",
-    //             // alt: value.alt_description || "No data",
-    //             // description: value.description || "No data",
-    //             // downloads: value.downloads || "No data",
-    //             // likes: value.likes || "No data",
-    //             // location: value.location.name || value.location.city || value.location.country || "No data",
-    //             // photoCamera: value.exif.name || "No data",
-    //             // updated_at: value.updated_at || "No data",
-    //             urls: value.urls.regular || "No data",
-    //             alt: value.alt_description || "No data",
-    //             description: value.description || "No data",
-    //             downloads: value.downloads || "No data",
-    //             views: value.views || "No data",
-    //             likes: value.likes || "No data",
-    //             location: value.location.name || value.location.city || value.location.country || "No data",
-    //             photoCamera: value.exif.name || "No data",
-    //             updated_at: value.updated_at || "No data",
-    //             fullName: value.user.name || "No data",
-    //             profileImage: value.user.profile_image.medium || "No data",
-    //             countInstagram: value.user.instagram_username || "No data"
-    //         },
-    //     ]);
-    // };
 
     const handleImageClick = (value) => {
         setInfoCurrentPhoto([
@@ -253,7 +222,28 @@ export default function BodyPinterest() {
                 countUnsplash: value.user.links.html || "No data"
             },
         ]);
+
+        const datos = {
+            urls: value.urls.regular || "No data",
+            alt: value.alt_description || "No data",
+            description: value.description || "No data",
+            downloads: value.downloads || "No data",
+            views: value.views || "No data",
+            likes: value.likes || "No data",
+            location: value.location.name || value.location.city || value.location.country || "No data",
+            photoCamera: value.exif.name || "No data",
+            created_at: value.created_at || "No data",
+            fullName: value.user.name || "No data",
+            profileImage: value.user.profile_image.medium || "No data",
+            countInstagram: value.user.instagram_username || "No data",
+            countUnsplash: value.user.links.html || "No data"
+        }
+
+
+        localStorage.setItem("imagenSeleccionada", JSON.stringify(datos))
+
     };
+
 
     useEffect(() => {
         const fetchData = async () => {
@@ -289,7 +279,8 @@ export default function BodyPinterest() {
                     ) : (
                         imagen.map((photo, key) => (
                             <div key={key} className="contenedor-img">
-                                <Link to={`/pinterest/${encodeURIComponent(photo.urls.regular)}`} className="img-img" >
+                                {/* <Link to={`/pinterest/${encodeURIComponent(photo.urls.regular)}`} className="img-img" > */}
+                                <Link to={`/pinterest`} className="img-img" >
                                     <img src={photo.urls.regular} alt={photo.alt_description} onClick={() => handleImageClick(photo)} />
                                     <div className="icon" >
                                         <IoSave size={20} color="black" />

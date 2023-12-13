@@ -22,6 +22,7 @@ export default function Profile() {
         }
     };
 
+    console.log(datosPerfil);
 
    console.log(datosPerfil); 
     return (
@@ -29,7 +30,8 @@ export default function Profile() {
 
             <div className="contenedor-datos">
                 <div className="contenedor-img">
-                    <img src={datosPerfil.link} alt="Foto de perfil" />
+                    {/* <img src={datosPerfil.link} alt="Foto de perfil" /> */}
+                    <img src="/img/veronica-2.jpg" alt="Foto de perfil" />
                 </div>
                 <strong> {datosPerfil.nombre} {datosPerfil.apellido} </strong>
                 <div className="logo-count-user">
@@ -47,14 +49,6 @@ export default function Profile() {
 
             <div className="contenedor-imagenes-guardadas">
                 <div className="imagenes">
-
-                    {/* {imagenesLocalStorage.map((item, key) => (
-                        <div key={key} className="imagenes-img" >
-                            <img src={item.url} alt={item.alt} />
-                            <span className="boton" onClick={() => eliminarImagen(item.url)} > Eliminar </span>
-                        </div>
-                    ))} */}
-
                     {imagenesLocalStorage.length > 0 ? (
                         imagenesLocalStorage.map((item, key) => (
                             <div key={key} className="imagenes-img">

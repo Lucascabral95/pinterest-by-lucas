@@ -9,8 +9,11 @@ export const storeZustand = create((set) => ({
   currentDate: moment().format('MMMM Do YYYY'),
   busqueda: 'Miami',
   setBusqueda: (valor) => set({ busqueda: valor }),
-  infoCurrentPhoto: [],
-  setInfoCurrentPhoto: (info) => set({ infoCurrentPhoto: info }),
+
+  infoCurrentPhoto: [], // codigo viejo (original)
+  setInfoCurrentPhoto: (info) => set({ infoCurrentPhoto: info }), // codigo viejo (original)
+  infoCurrentPhoto2: JSON.parse(localStorage.getItem("imagenSeleccionada")) || [], // contiene en localStorage toda la informacion de la imagen que se selecciono en la ruta raiz
+  setInfoCurrentPhoto2: (info) => set({ infoCurrentPhoto2: info }), // contiene en localStorage toda la informacion de la imagen que se selecciono en la ruta raiz
 
   infoCategoria: null, // mapean info de categoria
   setInfoCategoria: (value) => set({ infoCategoria: value }), // mapean info de categoria,
@@ -22,5 +25,5 @@ export const storeZustand = create((set) => ({
   setImagenesLocalStorage: (url) => set({ imagenesLocalStorage: url }), // contiene las claves "urls" con sus valores para luego mapearlos
 
   datosPerfil: JSON.parse(localStorage.getItem('dataPersonal')) || [], // almacena datos de usuario
-  setDatosPerfil: (data ) => set({ datosPerfil: data }) // almacena datos de usuario
+  setDatosPerfil: (data) => set({ datosPerfil: data }) // almacena datos de usuario
 }))

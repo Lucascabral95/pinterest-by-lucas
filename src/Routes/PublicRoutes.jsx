@@ -18,7 +18,8 @@ export default function PublicRoutes() {
             <Routes>
                 <Route path='*' element={<BodyPinterest />} />
                 <Route path='/' element={<BodyPinterest />} />
-                <Route path='/pinterest/:id' element={<ImagenPinterest />} />
+                {/* <Route path='/pinterest/:id' element={<ImagenPinterest />} /> */}
+                <Route path='/pinterest' element={<ImagenPinterest />} />
                 <Route path='/exploration' element={<ExplorarionPinterest />} />
                 <Route path='/perfil' element={<Profile />} />
                 <Route path='/configuration' element={<DatosPersonales />} />

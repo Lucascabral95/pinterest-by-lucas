@@ -42,7 +42,6 @@ export default function DatosPersonales() {
                     <div className="contenedor-img">
                         <div className="img-img">
                             <p> Foto </p>
-                            {/* <img src="/img/spyro.png" alt="Foto de perfil" /> */}
                             <img src={datosPerfil.link} alt="Foto de perfil" />
                         </div>
 
