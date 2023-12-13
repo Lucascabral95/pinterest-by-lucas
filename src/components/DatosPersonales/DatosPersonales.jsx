@@ -1,4 +1,5 @@
-import "./datosPersonales.scss"
+// import "./datosPersonales.scss"
+import "./DatosPersonales.scss"
 import { useForm } from "react-hook-form"
 import { storeZustand } from "../../zustand.jsx";
 
