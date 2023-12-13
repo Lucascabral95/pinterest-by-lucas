@@ -1,0 +1,247 @@
+a {
+    text-decoration: none;
+}
+
+.imagen-pinterest {
+    width: 93%;
+    margin: auto;
+    flex-wrap: wrap;
+
+    .contenedor-ruta {
+        display: flex;
+        flex-direction: column;
+
+        .back {
+            display: flex;
+
+            .svg-back {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 48px;
+                height: 48px;
+
+                &:hover {
+                    background-color: #E2E2E2;
+                    border-radius: 50%;
+                }
+            }
+
+            .texto {
+                width: 74px;
+                height: 43px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                top: 10px;
+
+                p {
+                    color: black;
+                    font-size: 20px;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .contenedor-padre {
+            // width: 90%;
+            width: 68%;
+            margin: auto;
+            display: flex;
+
+            .contenedora-info-user {
+                width: 100%;
+                margin: auto;
+
+                .cont {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 2.4%;
+
+                    .img-user {
+                        display: flex;
+                        height: 36px;
+
+                        .img-img {
+                            cursor: pointer;
+
+                            img {
+                                width: 36px;
+                                height: 36px;
+                                border-radius: 50%;
+                            }
+                        }
+
+                        .textos {
+                            display: block;
+                            margin-left: 8px;
+
+                            .texto-user {
+                                font-size: 15px;
+                                font-weight: 500;
+                                color: black;
+                            }
+
+                            .cuenta-instagram {
+                                display: flex;
+                                cursor: pointer;
+
+                                .imagen-instagram {
+                                    width: 16px;
+                                    height: 16px;
+                                    position: relative;
+                                    bottom: 14px;
+                                }
+
+                                .texto-instagram {
+                                    font-size: 12px;
+                                    color: blueviolet;
+                                    position: relative;
+                                    bottom: 16px;
+                                    font-weight: 400;
+                                    left: 4px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .boton {
+                    border: solid #d1d1d1 0.1px;
+                    border-radius: 4px;
+
+                    .icon {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 40px;
+                        height: 32px;
+                        padding: 11px;
+                        cursor: pointer;
+                    }
+
+                    .icon-icon {
+                        color: #919191;
+                    }
+
+                    .popover {
+                        position: absolute;
+                        transform: translateY(42px);
+                        background-color: black;
+                        border-radius: 8px;
+                        width: auto;
+                        min-width: 80px;
+                        padding-top: 3px;
+                        padding-bottom: 3px;
+                        padding-right: 4px;
+                        padding-left: 4px;
+                    
+                        .popover-texto {
+                            margin: auto;
+                            color: white;
+                            font-weight: 500;
+                            text-align: center;
+                        }
+                    }
+
+                    &:hover {
+                        border: solid black 0.2px;
+
+                        path {
+                            fill: black;
+                        }
+                    }
+                }
+            }
+        }
+
+        .foto-buscada {
+            justify-content: center;
+            align-items: center;
+            margin-top: 2.4%;
+            display: flex;
+            margin: auto;
+            width: 100%;
+            cursor: pointer;
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        .container-image {
+            margin-top: 2.4%;
+
+            .seccion-texto {
+                display: flex;
+
+                .texto {
+                    margin-right: 4%;
+
+                    .texto-1 {
+                        color: #767676;
+                        font-size: 14px;
+                    }
+
+                    .texto-2 {
+                        color: black;
+                        font-family: 15px;
+                        position: relative;
+                        bottom: 10px;
+                    }
+                }
+            }
+
+            .seccion-info {
+
+                .info {
+                    display: flex;
+
+                    p {
+                        color: #767676;
+                        font-size: 14px;
+                        vertical-align: middle;
+                        margin-left: 8px;
+                        position: relative;
+                        bottom: 2px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 769px) {
+    .imagen-pinterest {
+        width: 100%;
+
+        .contenedor-ruta {
+
+            .contenedor-padre {
+                width: 100%;
+                margin-top: 2.6%;
+
+                .contenedora-info-user {
+
+                    .cont {
+                        margin-bottom: 2.2%;
+                        padding-left: 3%;
+                        padding-right: 3%;
+                    }
+                }
+            }
+
+            // .foto-buscada{
+            //     .icon-zoom{
+            //         display: no;
+            //     }
+            // }
+
+            .container-image {
+                margin-left: 4%;
+            }
+        }
+    }
+}

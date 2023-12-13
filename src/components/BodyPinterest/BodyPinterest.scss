@@ -1,0 +1,163 @@
+.bodyPinterest {
+
+    .foto {
+        // column-count: 3; 
+        column-count: 4;
+        column-gap: 10px;
+        width: 93%;
+        margin: auto;
+
+        h2 {
+            font-weight: 600;
+            font-size: 1.8rem;
+        }
+
+        .contenedor-img {
+            position: relative;
+
+            a {
+                cursor: zoom-in;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+                margin-bottom: 8px;
+                border-radius: 8px;
+                break-inside: avoid;
+                object-fit: cover;
+
+                &:hover {
+                    filter: brightness(60%);
+                }
+            }
+
+            .icon {
+                background-color: #FFFFFFCC;
+                border-radius: 50%;
+                width: 32px;
+                height: 32px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                bottom: 22px;
+                right: 18px;
+                display: none;
+            }
+
+            .boton-guardar {
+                position: absolute;
+                top: 12px;
+                right: 18px;
+                text-decoration: none;
+                color: white;
+                font-weight: 600;
+                background-color: #E60023;
+                border-radius: 16px;
+                font-size: 16px;
+                padding-left: 16px;
+                padding-right: 16px;
+                padding-top: 12px;
+                padding-bottom: 12px;
+                display: none;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #ac2925;
+                }
+            }
+
+            &:hover {
+                .icon {
+                    display: flex;
+                }
+
+                .boton-guardar {
+                    display: block;
+                }
+            }
+        }
+
+        .contenedor-dots {
+            width: 32px;
+            height: 32px;
+            background-color: #FFFFFFCC;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            bottom: 50px;
+        }
+    }
+
+    .imagen-espera {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 28%;
+            height: auto;
+            border-radius: 50%;
+        }
+    }
+}
+
+// .imagen-espera {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+
+//     img {
+//         width: 28%;
+//         height: auto;
+//         border-radius: 50%;
+//     }
+// }
+
+
+@media (min-width: 426px) and (max-width: 767px) {
+    .bodyPinterest {
+
+        .foto {
+            column-count: 2;
+            column-gap: 10px;
+            width: 93%;
+            margin: auto;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .bodyPinterest {
+
+        .foto {
+            column-count: 1;
+            column-gap: 10px;
+            width: 93%;
+            margin: auto;
+        }
+    }
+}
+
+.popover {
+    position: absolute;
+    transform: translateY(42px);
+    background-color: black;
+    border-radius: 8px;
+    width: auto;
+    min-width: 80px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 3px;
+    padding-left: 3px;
+
+    .popover-texto {
+        margin: auto;
+        color: white;
+        font-weight: 500;
+        text-align: center;
+    }
+}

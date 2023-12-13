@@ -1,0 +1,46 @@
+.navbar-mobile {
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: fixed;
+    //
+    z-index: 1000; // esto hace que se quede fijo y que nunca lo superpongan otros divs
+    //
+    bottom: 0;
+    left: 0;
+
+    .contenedor-icon {
+
+        .icon {
+
+            .icon-contenedor {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: black;
+                width: 23px;
+                height: 23px;
+                border-radius: 50%;
+
+                p {
+                    margin: auto;
+                    font-size: 14px;
+                    color: white;
+                    font-weight: 600;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-mobile {
+        display: none;
+    }
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "categoria": "categoria-inicio",
+    "link": "/",
+    "titulo": "Inicio"
+  },
+  {
+    "id": 2,
+    "categoria": "categoria-explorar",
+    "link": "/exploration",
+    "titulo": "Explorar"
+  },
+  {
+    "id": 3,
+    "categoria": "categoria-crear",
+    "link": "/",
+    "titulo": "Crear"
+  }
+]

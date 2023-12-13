@@ -1,0 +1,58 @@
+[
+  {
+    "titulo": "Recetas de postres caseros",
+    "descripcion": "Hecho en casa",
+    "imagen": "/img/postres.jpg",
+    "busqueda": "Postres caseros",
+    "detalle": "Delicias caseras que despiertan antojos y transforman cada bocado en un placer visual. Explora nuestro mundo de postres y encuentra inspiración para endulzar tu día. 🍰✨ #PostresCaseros #DulcesDelicias"
+  },
+  {
+    "titulo": "Sesion de fotos navideña",
+    "descripcion": "Posando con la familia",
+    "imagen": "/img/familia.jpg",
+    "busqueda": "Navidad",
+    "detalle": "Descubre la magia de la temporada a través de las cautivadoras sesiones de fotos navideñas que hemos recopilado. Cada imagen cuenta una historia única llena de alegría y calidez."
+  },
+  {
+    "titulo": "Descubre lo que vendra en 2024",
+    "descripcion": "Informe de Unsplash",
+    "imagen": "/img/oceano.jpg",
+    "busqueda": "Nuevos comienzos",
+    "detalle": "Desde eventos importantes hasta las últimas tendencias, nuestra página te lleva en un viaje visual hacia el próximo año. Descubre lo que está en el horizonte y déjate inspirar."
+  },
+  {
+    "titulo": "Decoracion para tu hogar",
+    "descripcion": "POV: te sientes acogido",
+    "imagen": "/img/desing.jpeg",
+    "busqueda": "Decoracion hogar",
+    "detalle": "Transforma tu hogar en un oasis de estilo. Descubre ideas únicas de decoración que harán que cada rincón sea especial."
+  },
+  {
+    "titulo": "Decoracion navideña",
+    "descripcion": "Para tu hogar",
+    "imagen": "/img/deco-nav.jpg",
+    "busqueda": "Decoracion navideña",
+    "detalle": "Sumérgete en la magia navideña con nuestras sugerencias de decoración. Desde árboles centelleantes hasta detalles festivos, encuentra la inspiración perfecta."
+  },
+  {
+    "titulo": "Mejores destinos con nieve",
+    "descripcion": "POV: queres irte de vacaciones",
+    "imagen": "/img/nieve.jpeg",
+    "busqueda": "Nieve",
+    "detalle": "Explora la belleza invernal en los mejores destinos con nieve. Desde paisajes alpinos hasta pueblos cubiertos de blanco, encuentra tu paraíso invernal."
+  },
+  {
+    "titulo": "Mejores paisajes de Argentina",
+    "descripcion": "Paisajes cautivadores de Argentina esperan",
+    "imagen": "/img/argentina.jpg",
+    "busqueda": "Argentina paisajes",
+    "detalle": "Explora Argentina a través de sus paisajes: una experiencia visual que te conectará con la belleza pura. ¿Listo para sumergirte en la magia?"
+  },
+  {
+    "titulo": "Ultimas tendencias de Moda",
+    "descripcion": "Actualiza tu closet.",
+    "imagen": "/img/moda.jpeg",
+    "busqueda": "Moda ",
+    "detalle": "Sumérgete en el fascinante mundo de la moda. Desde pasarelas hasta consejos de estilo, encuentra inspiración para expresar tu individualidad con elegancia y confianza."
+  }
+]

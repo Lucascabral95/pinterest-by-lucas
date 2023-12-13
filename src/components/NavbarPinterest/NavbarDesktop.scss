@@ -1,0 +1,195 @@
+.pinterest-navbar {
+    .contenedor-navbar {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0.8%;
+
+        .categorias {
+            display: flex;
+
+            .categoria-logo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 48px;
+                height: 48px;
+                text-decoration: none;
+
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+
+                &:hover {
+                    background-color: #E2E2E2;
+                    border-radius: 20px;
+                }
+            }
+
+            .categoria-inicio {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 48px;
+                width: 72px;
+                text-decoration: none;
+
+                p {
+                    position: relative;
+                    top: 6px;
+                    text-decoration: none;
+                    color: #111111;
+                    text-align: center;
+                    font-weight: 600;
+                    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif;
+                }
+            }
+
+            .categoria-explorar {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 48px;
+                width: 92px;
+                text-decoration: none;
+
+                p {
+                    position: relative;
+                    top: 6px;
+                    text-decoration: none;
+                    color: #111111;
+                    text-align: center;
+                    font-weight: 600;
+                    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif;
+                }
+            }
+
+            .categoria-crear {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 48px;
+                width: 71px;
+                text-decoration: none;
+                margin-right: 5px;
+
+                p {
+                    position: relative;
+                    top: 6px;
+                    text-decoration: none;
+                    color: #111111;
+                    text-align: center;
+                    font-weight: 600;
+                    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif;
+                }
+            }
+        }
+
+        .buscador {
+            display: flex;
+            margin: auto;
+            width: 74%;
+
+            .buscador-lupa {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #E2E2E2;
+
+                .svg {
+                    margin-right: 1%;
+                }
+            }
+
+            input {
+                border: none;
+                background-color: #E2E2E2;
+            }
+
+            .icon-close {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+        }
+
+        .opciones {
+            display: flex;
+
+            .opciones-notificacion {
+                border-radius: 50%;
+                padding: 8px;
+                width: 48px;
+                height: 48px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &:hover {
+                    background-color: #E2E2E2;
+                    transition: 0.4s;
+                }
+            }
+
+            .opciones-mensaje {
+                border-radius: 50%;
+                padding: 8px;
+                width: 48px;
+                height: 48px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: 700;
+
+                &:hover {
+                    background-color: #E2E2E2;
+                    transition: 0.4s;
+                }
+            }
+
+            .opciones-perfil {
+                border-radius: 50%;
+                padding: 8px;
+                width: 48px;
+                height: 48px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: 700;
+
+                &:hover {
+                    background-color: #E2E2E2;
+                    transition: 0.4s;
+                }
+
+                img {
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                }
+            }
+
+            .opciones-datos {
+                border-radius: 50%;
+                padding: 8px;
+                width: 48px;
+                height: 48px;
+                display: flex;
+                justify-content: center;
+
+                &:hover {
+                    background-color: #E2E2E2;
+                    transition: 0.4s;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .pinterest-navbar {
+
+        display: none;
+    }
+}
