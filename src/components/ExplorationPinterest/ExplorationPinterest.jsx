@@ -144,7 +144,7 @@ export default function ExplorationPinterest() {
                 <div className="contenedor-cat" style={{ display: selectCategory ? "none" : "block" }}>
                     <div className="titulo">
                         <p> {currentDate} </p>
-                        <h2>Sigue inspirándote</h2>
+                        <h2>Seguí inspirándote</h2>
                     </div>
                     <div className="contenedor-categorias">
                         {Categorias.map((item, key) => (

@@ -170,19 +170,17 @@
 //     )
 // }
 
-
-
 import "./ImagenPinterest.scss"
-import { useParams } from "react-router-dom"
-import { Link } from "react-router-dom"
+import { useParams, Link } from "react-router-dom"
 import { storeZustand } from "../../zustand.jsx"
 import moment from "moment"
 import { MdOutlineDescription } from "react-icons/md";
-import { useState } from "react"
+import { useState, useEffect } from "react"
+import { toast, ToastContainer } from 'react-toastify';
 
 export default function ImagenPinterest() {
     const { id } = useParams()
-    const { infoCurrentPhoto, infoCurrentPhoto2 } = storeZustand()
+    const { infoCurrentPhoto, setImagenesLocalStorage, imagenesLocalStorage } = storeZustand()
     const [popover, setPopover] = useState(false)
 
     const countInstagram = `http://instagram.com/${infoCurrentPhoto[0]?.countInstagram}`
@@ -199,17 +197,37 @@ export default function ImagenPinterest() {
         window.open(infoCurrentPhoto[0]?.urls, "_blank")
     }
 
-    // const inArrow = () => {
-    //     setPopover(true)
-    // }
+    const inArrow = () => {
+        setPopover(true)
+    }
 
-    // const outArrow = () => {
-    //     setPopover(false)
-    // }
+    const outArrow = () => {
+        setPopover(false)
+    }
+
+    const guardarEnFavoritos = (link) => {
+        const datosParseados = JSON.parse(localStorage.getItem("imagenes")) || []
+        const imagenRepetida = datosParseados.some(i => i.url === link)
+
+        if (imagenRepetida) {
+            console.log(`La imagen ya se encuentra en favoritos`);
+            toast.error("La imagen ya se encuentra en favoritos.");
+        } else {
+            datosParseados.push({ url: link })
+            localStorage.setItem("imagenes", JSON.stringify(datosParseados))
+            setImagenesLocalStorage(datosParseados)
+            console.log(`Imagen agregada a favoritos.`);
+            toast.success("Imagen agregada a favoritos.");
+        }
+    }
 
     const fechaFormateada = moment(infoCurrentPhoto[0]?.created_at).format('MMMM Do YYYY');
 
     const imagenSeleccionada = JSON.parse(localStorage.getItem("imagenSeleccionada"))
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <div className="imagen-pinterest">
@@ -243,8 +261,8 @@ export default function ImagenPinterest() {
                                     </div>
                                 </div>
                             </div>
-                            {/* <div onMouseEnter={inArrow} onMouseLeave={outArrow} className="shadow-sm rounded boton"> */}
-                            <div className="shadow-sm rounded boton">
+                            <div onMouseEnter={inArrow} onMouseLeave={outArrow} onClick={() => guardarEnFavoritos(imagenSeleccionada.urls)} className="shadow-sm rounded boton">
+                                {/* <div className="shadow-sm rounded boton"> */}
                                 <div className="icon" >
                                     <svg className="icon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
                                         <path d="m19.35 11.625-5.85 5.4V1.5h-3v15.525l-5.85-5.4-2.025 2.25L12 22.425l9.375-8.55-2.025-2.25Z" fill="#666666">
@@ -257,6 +275,7 @@ export default function ImagenPinterest() {
                                     ) : (
                                         null
                                     )}
+                                    <ToastContainer />
                                 </div>
                             </div>
                         </div>
@@ -331,7 +350,7 @@ export default function ImagenPinterest() {
                                             d="m10 14.2 6.6-6.6L18 9l-8 8-4-4 1.4-1.4 2.6 2.6ZM21 5v6c0 5.5-3.8 10.7-9 12-5.2-1.3-9-6.5-9-12V5l9-4 9 4Zm-2 1.3-7-3.1-7 3.1V11c0 4.5 3 8.7 7 9.9 4-1.2 7-5.4 7-9.9V6.3Z" fill="#666666">
                                         </path>
                                     </svg>
-                                    <p> Uso gratuito bajo <strong>Licencia Unsplash</strong>. </p>
+                                    <p> Uso gratuito bajo <strong>Pinterest</strong>. </p>
                                 </div>
                             </div>
                         </div>

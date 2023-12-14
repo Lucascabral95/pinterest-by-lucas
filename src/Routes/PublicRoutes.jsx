@@ -1,3 +1,4 @@
+import "./PublicRoutes.scss"
 import ExplorarionPinterest from "../components/ExplorationPinterest/ExplorationPinterest.jsx"
 import ImagenPinterest from "../components/ImagenPinterest/ImagenPinterest"
 import { Routes, Route } from "react-router-dom"

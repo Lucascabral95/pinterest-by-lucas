@@ -1,6 +1,7 @@
 import "./NavbarMobile.scss"
 import { MdHomeFilled } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { BiSolidCategory } from "react-icons/bi";
 
 export default function NavbarMobile() {
 
@@ -17,12 +18,13 @@ export default function NavbarMobile() {
                     </svg>
                 </div>
             </Link>
-            <Link to={""} className="contenedor-icon">
+            <Link to={"/exploration"} className="contenedor-icon">
                 <div className="icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
                         <path d="M18 12.5a1.5 1.5 0 1 1 .001-3.001A1.5 1.5 0 0 1 18 12.5m-6 0a1.5 1.5 0 1 1 .001-3.001A1.5 1.5 0 0 1 12 12.5m-6 0a1.5 1.5 0 1 1 .001-3.001A1.5 1.5 0 0 1 6 12.5M12 0C5.925 0 1 4.925 1 11c0 2.653.94 5.086 2.504 6.986L2 24l5.336-3.049A10.93 10.93 0 0 0 12 22c6.075 0 11-4.925 11-11S18.075 0 12 0" fill="#000000">
                         </path>
-                    </svg>
+                    </svg> */}
+                    <BiSolidCategory size={24} color="#000000" />
                 </div>
             </Link>
             <Link to={"/perfil"} className="contenedor-icon">
