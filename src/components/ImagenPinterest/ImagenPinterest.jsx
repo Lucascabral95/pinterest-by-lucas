@@ -177,13 +177,11 @@ import moment from "moment"
 import { MdOutlineDescription } from "react-icons/md";
 import { useState, useEffect } from "react"
 import { toast, ToastContainer } from 'react-toastify';
-import { useLocation } from "react-router-dom";
 
 export default function ImagenPinterest() {
     const { id } = useParams()
     const { infoCurrentPhoto, setImagenesLocalStorage, imagenesLocalStorage } = storeZustand()
     const [popover, setPopover] = useState(false)
-    const { pathname } = useLocation();
 
     const countInstagram = `http://instagram.com/${infoCurrentPhoto[0]?.countInstagram}`
 
@@ -229,7 +227,7 @@ export default function ImagenPinterest() {
 
     useEffect(() => {
         window.scrollTo(0, 0);
-      }, [pathname]);
+      }, []);
 
     return (
         <div className="imagen-pinterest">
