@@ -10,7 +10,8 @@ export default function NavbarMobile() {
 
             <Link to={"/"}>
                 <div className="logo-e-imagen">
-                    <img className="logo-e-imagen-img" src="https://upload.wikimedia.org/wikipedia/commons/9/94/Pinterest_logo.png" alt="Logo de Pinterest" />
+                    {/* <img className="logo-e-imagen-img" src="https://upload.wikimedia.org/wikipedia/commons/9/94/Pinterest_logo.png" alt="Logo de Pinterest" /> */}
+                    <img className="logo-e-imagen-img" src="/img/logoo-pinterest.png" alt="Logo de Pinterest" />
                 </div>
             </Link>
 
@@ -39,9 +40,6 @@ export default function NavbarMobile() {
                     </div>
                 </Link>
             </div>
-
-
-
 
         </div>
     )
