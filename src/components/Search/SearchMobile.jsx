@@ -1,9 +1,9 @@
 import { useState } from "react"
 import "./SearchMobile.scss"
 import { storeZustand } from "../../zustand.jsx"
-import carousel from "../../JSON/Carousel.json"
 import BodyPinterest from "../BodyPinterest/BodyPinterest.jsx"
 import ExplorationPinterest from "../ExplorationPinterest/ExplorationPinterest.jsx"
+import Carousel from "./Carousel.jsx"
 
 export default function SearchMobile() {
     const [busquedaNavbar, setBusquedaNavbar] = useState("")
@@ -38,27 +38,7 @@ export default function SearchMobile() {
                 </div>
             </div>
 
-            <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
-                <div className="carousel-inner">
-                    <div className="carousel-item active" data-bs-interval="10000">
-                        <img src="https://mandolina.co/wp-content/uploads/2020/11/postre-de-oreo.jpg" className="d-block w-100" alt="Postres" style={{ height:"54vw" }}/>
-                    </div>
-                    <div className="carousel-item" data-bs-interval="2000">
-                        <img src="https://audaces.com/wp-content/uploads/2022/03/estilos-de-moda.webp" className="d-block w-100" alt="..." style={{ height:"54vw" }}/>
-                    </div>
-                    <div className="carousel-item">
-                        <img src="https://media.ambito.com/p/4c50db8f232830d01a3952e9c82b7ba2/adjuntos/239/imagenes/039/791/0039791115/playa-paradisiacasjpg.jpg" className="d-block w-100" alt="..." style={{ height:"54vw" }}/>
-                    </div>
-                </div>
-                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Previous</span>
-                </button>
-                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Next</span>
-                </button>
-            </div>
+            <Carousel />
 
             {searchActive ? (
                 <BodyPinterest />

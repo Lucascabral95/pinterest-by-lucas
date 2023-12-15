@@ -26,8 +26,15 @@
     }
 }
 
+@media (max-width: 424px) {
+    .search {
+        margin-top: -2vw;
+    }
+}
+
 @media (min-width: 425px) and (max-width: 767px) {
     .search {
+        margin-top: -3.6vw;
 
         .contenedor-search {
             margin-top: 2.4%;
@@ -41,5 +48,3 @@
         display: none;
     }
 }
-
-

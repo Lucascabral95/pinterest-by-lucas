@@ -7,7 +7,7 @@ export const storeZustand = create((set) => ({
   cantidadFotos: 4,  // la cantidad de fotos que muestra por vez Unsplash
 
   currentDate: moment().format('MMMM Do YYYY'),
-  busqueda: 'Miami',
+  busqueda: 'Animales',
   setBusqueda: (valor) => set({ busqueda: valor }),
 
   infoCurrentPhoto: [], // codigo viejo (original)

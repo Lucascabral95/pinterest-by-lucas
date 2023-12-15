@@ -76,30 +76,6 @@ export default function NavbarDesktop() {
                 </div>
               </Link>
             ))}
-            {/* <Link to={"/pin"} className="categoria-logo"
-            title='Logo de Pinteres'>
-            <div className="contenedor-categoria">
-            <img src="/img/logo-pinterest.png" alt="Logo de Pinterest" />
-            </div>
-            </Link>
-            <Link to={"/pin"} className="categoria-inicio" onClick={() => handleClick(1)} title='Inicio'
-            style={active === 1 ? estilosActive : null} >
-            <div className="contenedor-categoria">
-            <p style={{ color: active === 1 ? "white" : "black" }}> Inicio </p>
-            </div>
-            </Link>
-            <Link to={"/exploration"} className="categoria-explorar" onClick={() => handleClick(2)} title='Explorar'
-            style={active === 2 ? estilosActive : null}>
-            <div className="contenedor-categoria">
-            <p style={{ color: active === 2 ? "white" : "black" }}> Explorar</p>
-            </div>
-            </Link>
-            <Link className="categoria-crear" onClick={() => handleClick(3)} title='Crear'
-            style={active === 3 ? estilosActive : null}>
-            <div className="contenedor-categoria">
-            <p style={{ color: active === 3 ? "white" : "black" }}> Crear </p>
-            </div>
-          </Link> */}
           </div>
 
           <div className="buscador form-group" onClick={ampliarInput} style={{ transform: inputSelect ? "scale(1.01)" : null }} >
@@ -123,6 +99,7 @@ export default function NavbarDesktop() {
               title='Notificiones'
               onMouseEnter={() => inArrow('elemento1')}
               onMouseLeave={outArrow}
+              to={"/search"}
             >
               {popover === "elemento1" ? (
                 <div className="popover">
@@ -202,7 +179,7 @@ export default function NavbarDesktop() {
       </div>
 
       <NavbarMobile />
-      
+
     </div>
   )
 }

@@ -238,10 +238,7 @@ export default function BodyPinterest() {
             countInstagram: value.user.instagram_username || "No data",
             countUnsplash: value.user.links.html || "No data"
         }
-
-
         localStorage.setItem("imagenSeleccionada", JSON.stringify(datos))
-
     };
 
 
@@ -267,6 +264,7 @@ export default function BodyPinterest() {
 
     return (
         <div className="container-fluid bodyPinterest">
+
             <div className="mb-4 mt-5">
                 <h2> Busqueda: {busqueda} </h2>
                 <div className="foto">

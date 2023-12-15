@@ -1,11 +1,13 @@
 import React from "react";
 import "./Perfil.scss";
+import { useState, useEffect } from "react";
 import { storeZustand } from "../../zustand.jsx";
 import { toast, ToastContainer } from 'react-toastify';
 import { Link } from "react-router-dom";
 
 export default function Profile() {
     const { imagenesLocalStorage, setImagenesLocalStorage, datosPerfil } = storeZustand();
+    const [datosIncompletos, setDatosIncompletos] = useState(true)
 
     const eliminarImagen = (value) => {
         const findImageIndex = imagenesLocalStorage.findIndex((i) => i.url === value);
@@ -22,15 +24,20 @@ export default function Profile() {
         }
     };
 
-    console.log(datosPerfil);
+    const tieneDatos = datosPerfil.nombre ? true : false
 
-   console.log(datosPerfil); 
+    useEffect(() => {
+        if (!tieneDatos) {
+            setDatosIncompletos(false)
+        }
+    }, [datosIncompletos])
+
+    console.log(datosPerfil);
     return (
         <div className="perfil">
 
-            <div className="contenedor-datos">
+            <div className="contenedor-datos" style={{ opacity: datosIncompletos ? "1" : "0.7", filter: datosIncompletos ? null : "blur(5px)" }}>
                 <div className="contenedor-img">
-                    {/* <img src={datosPerfil.link} alt="Foto de perfil" /> */}
                     <img src="/img/veronica-2.jpg" alt="Foto de perfil" />
                 </div>
                 <strong> {datosPerfil.nombre} {datosPerfil.apellido} </strong>
@@ -61,7 +68,6 @@ export default function Profile() {
                     ) : (
                         <p>No hay imágenes disponibles</p>
                     )}
-
                 </div>
             </div>
 

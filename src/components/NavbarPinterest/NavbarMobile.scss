@@ -8,9 +8,7 @@
     padding-top: 10px;
     padding-bottom: 10px;
     position: fixed;
-    //
-    z-index: 1000; // esto hace que se quede fijo y que nunca lo superpongan otros divs
-    //
+    z-index: 1000;
     bottom: 0;
     left: 0;
 
@@ -39,8 +37,52 @@
     }
 }
 
+.logo-e-imagen {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .logo-e-imagen-img {
+        // width: 54vw;
+        max-width: 250px;
+        width: 54vw;
+    }
+}
+
+@media (min-width: 320px) and (max-width:424px) {
+
+    .logo-e-imagen {
+        .logo-e-imagen-img {
+            margin-top: -3vw;
+        }
+    }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+
+    .logo-e-imagen {
+        .logo-e-imagen-img {
+            margin-top: -3.4vw;
+            margin-bottom: 3vw;
+        }
+    }
+}
+
 @media (min-width: 768px) {
+
+    .logo-e-imagen {
+        display: none;
+    }
+
     .navbar-mobile {
         display: none;
+    }
+
+    .logo-e-imagen {
+        .logo-e-imagen-img {
+            margin-top: -4vw;
+        }
     }
 }

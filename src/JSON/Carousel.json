@@ -1,32 +1,37 @@
 [
     {
-        "imagen": "",
-        "titulo": "",
-        "descripcion": ""
+        "imagen": "https://images.unsplash.com/photo-1558882224-dda166733046?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "titulo": "Decoración",
+        "descripcion": "Estilo que inspira. Déjate sorprender"
     },
     {
-        "imagen": "",
-        "titulo": "",
-        "descripcion": ""
+        "imagen": "https://images.unsplash.com/photo-1493724798364-c4ca5e3f5fd3?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "titulo": "Patagonia",
+        "descripcion": "Patagonia: Naturaleza sin límites"
     },
     {
-        "imagen": "",
-        "titulo": "",
-        "descripcion": ""
+        "imagen": "https://images.unsplash.com/photo-1542262867-c4b517b92db8?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "titulo": "Decoración navideña",
+        "descripcion": "Navidad: Magia en cada detalle"
     },
     {
-        "imagen": "",
-        "titulo": "",
-        "descripcion": ""
+        "imagen": "https://images.unsplash.com/photo-1470093851219-69951fcbb533?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "titulo": "Animales",
+        "descripcion": "La vida en cada mirada animal"
     },
     {
-        "imagen": "",
-        "titulo": "",
-        "descripcion": ""
+        "imagen": "https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "titulo": "Moda",
+        "descripcion": "Moda: Donde el estilo habla"
     },
     {
-        "imagen": "",
-        "titulo": "",
-        "descripcion": ""
+        "imagen": "https://images.unsplash.com/photo-1532581140115-3e355d1ed1de?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "titulo": "Auto",
+        "descripcion": "Motor y elegancia en cada imagen"
+    },
+    {
+        "imagen": "https://images.unsplash.com/photo-1486427944299-d1955d23e34d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "titulo": "Postres caseros",
+        "descripcion": "Delicias caseras, amor en cada receta"
     }
 ]

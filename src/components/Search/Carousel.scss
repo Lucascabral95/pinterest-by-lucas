@@ -1,0 +1,42 @@
+.carousel {
+
+    .carousel-container {
+        display: none;
+
+    }
+}
+
+@media (max-width: 767px) {
+    .carousel {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .carousel-container {
+            width: 98%;
+            display: block;
+            margin-bottom: 5%;
+
+            .container-img {
+                position: relative;
+
+                .titulo {
+                    color: white;
+                    font-size: 9vw;
+                    position: absolute;
+                    bottom: 2.6vw;
+                }
+
+                .texto {
+                    color: white;
+                    font-size: 4.2vw;
+                    font-weight: 500;
+                    position: absolute;
+                    bottom: 26vw;
+                }
+            }
+        }
+    }
+}

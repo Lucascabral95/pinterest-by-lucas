@@ -31,7 +31,7 @@ function App() {
 
         <div className="categorias">
           <Link className="categoria-logo"
-            title='Logo de Pinteres'>
+            title='Logo'>
             <div className="contenedor-categoria">
               <img src="/img/logo-pinterest.png" alt="Logo de Pinterest" />
             </div>
