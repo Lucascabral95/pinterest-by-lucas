@@ -54,6 +54,11 @@ export default function Profile() {
                 </div>
             </div>
 
+            <div className="completar" >
+                {/* <p className="texto" style={{ display: datosIncompletos ? "none" : "flex" }}> Para ver tus datos, completalos </p> */}
+                <Link className="btn btn-danger link" to={"/configuration"} style={{ display: datosIncompletos ? "none" : "flex" }}> Completa tus datos </Link>
+            </div>
+
             <div className="contenedor-imagenes-guardadas">
                 <div className="imagenes">
                     {imagenesLocalStorage.length > 0 ? (

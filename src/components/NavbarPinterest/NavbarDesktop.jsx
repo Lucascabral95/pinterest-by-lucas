@@ -5,6 +5,7 @@ import { storeZustand } from "../../zustand.jsx"
 import { IoIosCloseCircle } from "react-icons/io";
 import Navbar from "../../JSON/Navbar.json"
 import NavbarMobile from "./NavbarMobile.jsx";
+import NavbarMobileImagen from "./NavbarMobileImagen.jsx";
 
 export default function NavbarDesktop() {
   const [active, setActive] = useState(1)
@@ -179,6 +180,7 @@ export default function NavbarDesktop() {
       </div>
 
       <NavbarMobile />
+      {/* <NavbarMobileImagen /> */}
 
     </div>
   )

@@ -74,6 +74,14 @@
         }
     }
 
+    .completar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1%;
+        margin-bottom: 1.4%;
+    }
+
     .contenedor-imagenes-guardadas {
         column-count: 4;
         column-gap: 10px;

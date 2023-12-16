@@ -186,7 +186,7 @@ export default function BodyPinterest() {
     const [imagen, setImagen] = useState([]);
     const [noImages, setNoImages] = useState(false);
     const [loading, setLoading] = useState(true);
-    const { busqueda, setInfoCurrentPhoto, setImagenesLocalStorage, cantidadFotos, setInfoCurrentPhoto2 } = storeZustand();
+    const { busqueda, setInfoCurrentPhoto, setImagenesLocalStorage, cantidadFotos, cantidadColumnas } = storeZustand();
 
     const guardarEnFavoritos = (link) => {
         const datosParseados = JSON.parse(localStorage.getItem('imagenes')) || [];
@@ -267,6 +267,7 @@ export default function BodyPinterest() {
 
             <div className="mb-4 mt-5">
                 <h2> Busqueda: {busqueda} </h2>
+                {/* <div className="foto" style={{ columnCount:`${cantidadColumnas}` }}> */}
                 <div className="foto">
                     {loading ? (
                         Array.from({ length: cantidadFotos }).map((_, index) => (

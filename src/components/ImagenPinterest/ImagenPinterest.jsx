@@ -177,7 +177,7 @@ import moment from "moment"
 import { MdOutlineDescription } from "react-icons/md";
 import { useState, useEffect } from "react"
 import { toast, ToastContainer } from 'react-toastify';
-
+import NavbarMobileImagen from "../NavbarPinterest/NavbarMobileImagen.jsx";
 export default function ImagenPinterest() {
     const { id } = useParams()
     const { infoCurrentPhoto, setImagenesLocalStorage, imagenesLocalStorage } = storeZustand()
@@ -262,7 +262,6 @@ export default function ImagenPinterest() {
                                 </div>
                             </div>
                             <div onMouseEnter={inArrow} onMouseLeave={outArrow} onClick={() => guardarEnFavoritos(imagenSeleccionada.urls)} className="shadow-sm rounded boton">
-                                {/* <div className="shadow-sm rounded boton"> */}
                                 <div className="icon" >
                                     <svg className="icon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
                                         <path d="m19.35 11.625-5.85 5.4V1.5h-3v15.525l-5.85-5.4-2.025 2.25L12 22.425l9.375-8.55-2.025-2.25Z" fill="#666666">

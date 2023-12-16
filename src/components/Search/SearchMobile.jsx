@@ -2,7 +2,6 @@ import { useState } from "react"
 import "./SearchMobile.scss"
 import { storeZustand } from "../../zustand.jsx"
 import BodyPinterest from "../BodyPinterest/BodyPinterest.jsx"
-import ExplorationPinterest from "../ExplorationPinterest/ExplorationPinterest.jsx"
 import Carousel from "./Carousel.jsx"
 
 export default function SearchMobile() {
@@ -45,8 +44,6 @@ export default function SearchMobile() {
             ) : (
                 null
             )}
-
-            <ExplorationPinterest />
 
         </div>
     )
