@@ -1,6 +1,6 @@
 import "./NavbarDesktop.scss"
-import { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+import { Link, useNavigate, useLocation } from 'react-router-dom'
 import { storeZustand } from "../../zustand.jsx"
 import { IoIosCloseCircle } from "react-icons/io";
 import Navbar from "../../JSON/Navbar.json"
@@ -11,7 +11,7 @@ export default function NavbarDesktop() {
   const [active, setActive] = useState(1)
   const [inputSelect, setInputSelect] = useState(false)
   const [busquedaNavbar, setBusquedaNavbar] = useState("")
-  const { busqueda, setBusqueda } = storeZustand()
+  const { busqueda, setBusqueda, } = storeZustand()
   const navigate = useNavigate();
   const [popover, setPopover] = useState({
     elemento1: false,
@@ -55,6 +55,12 @@ export default function NavbarDesktop() {
       }
     }
   }
+
+  const ubi = useLocation()
+
+  console.log(`${ubi.pathname}`);
+
+  const verseONo = ubi.pathname === "/pinterest" ? true : false
 
   return (
     <div className="navbar-full">
@@ -179,8 +185,14 @@ export default function NavbarDesktop() {
         </div>
       </div>
 
-      <NavbarMobile />
-      {/* <NavbarMobileImagen /> */}
+
+      {/* <NavbarMobile /> */}
+
+      {verseONo ? (
+        <NavbarMobileImagen />
+        ) : (
+          <NavbarMobile />
+)}
 
     </div>
   )

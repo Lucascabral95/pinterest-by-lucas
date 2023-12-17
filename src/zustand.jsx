@@ -1,14 +1,12 @@
 import { create } from "zustand";
 import moment from "moment";
 
-// const accessKey = "IUFSMGKqNNZGzGZxUbHsEgJnQIPq6tcq33QAVqlemPs";
-
 export const storeZustand = create((set) => ({
-  cantidadFotos: 4,  // la cantidad de fotos que muestra por vez Unsplash
+  cantidadFotos: 16,  // la cantidad de fotos que muestra por vez Unsplash
   cantidadColumnas: 4,
 
   currentDate: moment().format('MMMM Do YYYY'),
-  busqueda: 'Animales',
+  busqueda: 'Postres',
   setBusqueda: (valor) => set({ busqueda: valor }),
 
   infoCurrentPhoto: [], // codigo viejo (original)

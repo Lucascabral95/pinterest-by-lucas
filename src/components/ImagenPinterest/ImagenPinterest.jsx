@@ -171,13 +171,12 @@
 // }
 
 import "./ImagenPinterest.scss"
-import { useParams, Link } from "react-router-dom"
+import { useParams, Link, useLocation } from "react-router-dom"
 import { storeZustand } from "../../zustand.jsx"
 import moment from "moment"
 import { MdOutlineDescription } from "react-icons/md";
 import { useState, useEffect } from "react"
 import { toast, ToastContainer } from 'react-toastify';
-import NavbarMobileImagen from "../NavbarPinterest/NavbarMobileImagen.jsx";
 export default function ImagenPinterest() {
     const { id } = useParams()
     const { infoCurrentPhoto, setImagenesLocalStorage, imagenesLocalStorage } = storeZustand()

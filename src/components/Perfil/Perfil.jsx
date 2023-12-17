@@ -38,7 +38,8 @@ export default function Profile() {
 
             <div className="contenedor-datos" style={{ opacity: datosIncompletos ? "1" : "0.7", filter: datosIncompletos ? null : "blur(5px)" }}>
                 <div className="contenedor-img">
-                    <img src="/img/veronica-2.jpg" alt="Foto de perfil" />
+                    {/* <img src="/img/veronica-2.jpg" alt="Foto de perfil" /> */}
+                    <img src={datosPerfil.link} alt="Foto de perfil" />
                 </div>
                 <strong> {datosPerfil.nombre} {datosPerfil.apellido} </strong>
                 <div className="logo-count-user">
