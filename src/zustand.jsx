@@ -2,7 +2,7 @@ import { create } from "zustand";
 import moment from "moment";
 
 export const storeZustand = create((set) => ({
-  cantidadFotos: 16,  // la cantidad de fotos que muestra por vez Unsplash
+  cantidadFotos: 4,  // la cantidad de fotos que muestra por vez Unsplash
   cantidadColumnas: 4,
 
   currentDate: moment().format('MMMM Do YYYY'),
@@ -25,4 +25,4 @@ export const storeZustand = create((set) => ({
 
   datosPerfil: JSON.parse(localStorage.getItem('dataPersonal')) || [], // almacena datos de usuario
   setDatosPerfil: (data) => set({ datosPerfil: data }) // almacena datos de usuario
-}))
+    }))

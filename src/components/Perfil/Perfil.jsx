@@ -33,6 +33,7 @@ export default function Profile() {
     }, [datosIncompletos])
 
     console.log(datosPerfil);
+
     return (
         <div className="perfil">
 

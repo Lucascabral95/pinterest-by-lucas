@@ -7,6 +7,7 @@ import NavbarDesktop from "../components/NavbarPinterest/NavbarDesktop.jsx"
 import BodyPinterest from "../components/BodyPinterest/BodyPinterest.jsx"
 import DatosPersonales from "../components/DatosPersonales/DatosPersonales.jsx"
 import SearchMobile from "../components/Search/SearchMobile.jsx"
+import Scroll from "../scrol.jsx"
 
 export default function PublicRoutes() {
 
@@ -24,6 +25,7 @@ export default function PublicRoutes() {
                 <Route path='/configuration' element={<DatosPersonales />} />
                 <Route path='/search' element={<SearchMobile />} />
                 <Route path='/pinterest' element={<ImagenPinterest />} />
+                <Route path='/scroll' element={<Scroll />} />
             </Routes>
 
         </>
