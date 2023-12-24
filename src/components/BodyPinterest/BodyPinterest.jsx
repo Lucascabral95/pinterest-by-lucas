@@ -237,25 +237,32 @@ export default function BodyPinterest() {
                     hasMore={true}
                 >
                     <div className="foto">
-                        {imagen.map((photo, key) => (
-                            <div key={key} className="contenedor-img">
-                                <Link to={`/pinterest`} className="img-img">
-                                    <img
-                                        src={photo.urls.regular}
-                                        alt={photo.alt_description}
-                                        onClick={() => handleImageClick(photo)}
-                                    />
-                                    <div className="icon">
-                                        <IoSave size={20} color="black" />
-                                    </div>
-                                    <button className="boton-guardar" onClick={() => guardarEnFavoritos(photo.urls.regular)}>
-                                        Guardar
-                                    </button>
-                                </Link>
-                            </div>
-                        ))}
+                        {loading ? (
+                            Array.from({ length: cantidadFotos }).map((_, index) => (
+                                <div key={index} className="contenedor-img">
+                                    <Skeleton height={300} />
+                                </div>
+                            ))
+                        ) : (
+                            imagen.map((photo, key) => (
+                                <div key={key} className="contenedor-img">
+                                    <Link to={`/pinterest`} className="img-img">
+                                        <img
+                                            src={photo.urls.regular}
+                                            alt={photo.alt_description}
+                                            onClick={() => handleImageClick(photo)}
+                                        />
+                                        <div className="icon">
+                                            <IoSave size={20} color="black" />
+                                        </div>
+                                        <Link className="boton-guardar" onClick={() => guardarEnFavoritos(photo.urls.regular)}> Guardar </Link>
+                                    </Link>
+                                </div>
+                            ))
+                        )}
                     </div>
                 </InfiniteScroll>
+
                 {noImages ? (
                     <>
                         <h3 className="text-center mt-3"> Espere a que la API's vuelva a recuperar su cuota, por favor. </h3>
@@ -264,7 +271,10 @@ export default function BodyPinterest() {
                         </div>
                     </>
                 ) : null}
+
+
                 <ToastContainer autoClose={1200} />
+            
             </div>
         </div>
     );

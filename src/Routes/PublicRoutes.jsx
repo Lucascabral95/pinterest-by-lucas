@@ -1,5 +1,5 @@
 import "./PublicRoutes.scss"
-import { Routes, Route, useLocation } from "react-router-dom"
+import { Routes, Route } from "react-router-dom"
 import ExplorarionPinterest from "../components/ExplorationPinterest/ExplorationPinterest.jsx"
 import ImagenPinterest from "../components/ImagenPinterest/ImagenPinterest"
 import Profile from "../components/Perfil/Perfil.jsx"
@@ -8,6 +8,7 @@ import BodyPinterest from "../components/BodyPinterest/BodyPinterest.jsx"
 import DatosPersonales from "../components/DatosPersonales/DatosPersonales.jsx"
 import SearchMobile from "../components/Search/SearchMobile.jsx"
 import Scroll from "../scrol.jsx"
+import ImagenesFavoritas from "../components/ImagenesFavoritas/ImagenesFavoritas.jsx"
 
 export default function PublicRoutes() {
 
@@ -15,7 +16,7 @@ export default function PublicRoutes() {
 
         <>
 
-                <NavbarDesktop />
+            <NavbarDesktop />
 
             <Routes>
                 <Route path='*' element={<BodyPinterest />} />
@@ -26,6 +27,9 @@ export default function PublicRoutes() {
                 <Route path='/search' element={<SearchMobile />} />
                 <Route path='/pinterest' element={<ImagenPinterest />} />
                 <Route path='/scroll' element={<Scroll />} />
+
+                <Route path='/favoritas' element={<ImagenesFavoritas />} />
+
             </Routes>
 
         </>

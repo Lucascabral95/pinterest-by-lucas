@@ -127,6 +127,7 @@ export default function NavbarDesktop() {
               title='Mensajes'
               onMouseEnter={() => inArrow('elemento2')}
               onMouseLeave={outArrow}
+              to={"/favoritas"}
             >
               {popover === "elemento2" ? (
                 <div className="popover">
