@@ -275,7 +275,7 @@
 //                 ) : null}
 
 //                 <ToastContainer autoClose={1200} />
-            
+
 //             </div>
 //         </div>
 //     );
@@ -391,7 +391,13 @@ export default function BodyPinterest() {
     return (
         <div className="container-fluid bodyPinterest">
             <div className="mb-4 mt-5">
-                <h2> Busqueda: {busqueda} </h2>
+
+                {noImages ? (
+                    null
+                ) : (
+                    <h2> Busqueda: {busqueda} </h2>
+                )}
+                
                 <InfiniteScroll
                     dataLength={imagen.length}
                     next={fetchData}
@@ -434,7 +440,7 @@ export default function BodyPinterest() {
                 ) : null}
 
                 <ToastContainer autoClose={1200} />
-            
+
             </div>
         </div>
     );
