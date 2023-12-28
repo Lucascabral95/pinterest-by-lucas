@@ -1,7 +1,10 @@
 .title-imagenes-favoritas {
-    color: red;
-    font-weight: bolder;
-    font-size: 2.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    margin-top: 1.4%;
+    margin-bottom: 2%;
+    font-size: 2.4rem;
+    color: palevioletred;
 }
 
 .contenedor-imagenes-guardadas {
@@ -61,6 +64,12 @@
 
 @media (min-width: 426px) and (max-width: 767px) {
 
+    .title-imagenes-favoritas{
+        font-size: 1.6rem;
+        color: violet;
+        margin-bottom: 3.8%;
+    }
+    
     .contenedor-imagenes-guardadas {
         column-count: 2;
         column-gap: 10px;
@@ -70,6 +79,12 @@
 }
 
 @media (max-width: 425px) {
+    
+    .title-imagenes-favoritas{
+        font-size: 1.2rem;
+        color: violet;
+        margin-bottom: 3.8%;
+    }
 
     .contenedor-imagenes-guardadas {
         column-count: 1;

@@ -40,7 +40,6 @@ export default function ImagenesFavoritas() {
                 </div>
             </div>
 
-
         </div>
     )
 }

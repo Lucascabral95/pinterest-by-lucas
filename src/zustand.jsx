@@ -2,7 +2,7 @@ import { create } from "zustand";
 import moment from "moment";
 
 export const storeZustand = create((set) => ({
-  cantidadFotos: 4,  // la cantidad de fotos que muestra por vez Unsplash
+  cantidadFotos: 8,  // la cantidad de fotos que muestra por vez Unsplash
   cantidadColumnas: 4,
 
   currentDate: moment().format('MMMM Do YYYY'),

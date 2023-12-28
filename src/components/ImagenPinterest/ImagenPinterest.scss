@@ -168,6 +168,8 @@ a {
             img {
                 max-width: 100%;
                 height: auto;
+                // max-width: 100%;
+                // max-height: 80vh;
             }
         }
 
@@ -247,3 +249,14 @@ a {
         }
     }
 }
+
+@media (min-width: 769px) { 
+    .foto-buscada{
+
+        .img{
+            max-width: 100%;
+            max-height: 80vh;
+        }
+    }
+}
+

@@ -105,7 +105,7 @@ export default function Profile() {
                                 name="Informacion"
                                 className="form-control"
                                 value={datosPerfil.informacion}
-                                >
+                            >
                             </textarea>
                         </div>
                         <div className="form-group">
@@ -179,8 +179,8 @@ export default function Profile() {
                     </div>
                 </div>
             ) : (
-            null
-                )}
+                null
+            )}
 
             <ToastContainer autoClose={1200} />
 
