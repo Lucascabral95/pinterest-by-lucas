@@ -24,5 +24,8 @@ export const storeZustand = create((set) => ({
   setImagenesLocalStorage: (url) => set({ imagenesLocalStorage: url }), // contiene las claves "urls" con sus valores para luego mapearlos
 
   datosPerfil: JSON.parse(localStorage.getItem('dataPersonal')) || [], // almacena datos de usuario
-  setDatosPerfil: (data) => set({ datosPerfil: data }) // almacena datos de usuario
+  setDatosPerfil: (data) => set({ datosPerfil: data }), // almacena datos de usuario
+
+  primeraLetraNombre: "", // primera letra del nombre registrado por el usuario
+  setPrimeraLetraNombre: (name) => set({ primeraLetraNombre: name })
     }))

@@ -287,9 +287,9 @@ import "./BodyPinterest.scss";
 import axios from "axios";
 import { storeZustand } from "../../zustand.jsx";
 import { Link } from "react-router-dom";
-import Skeleton from "react-loading-skeleton";
 import { toast, ToastContainer } from 'react-toastify';
 import InfiniteScroll from 'react-infinite-scroll-component';
+import Skeleton from "react-loading-skeleton";
 
 const accessKey = "IUFSMGKqNNZGzGZxUbHsEgJnQIPq6tcq33QAVqlemPs";
 
@@ -343,6 +343,14 @@ export default function BodyPinterest() {
         }
     };
 
+    window.onscroll = () => {
+        if (
+            window.innerHeight + document.documentElement.scrollTop === document.documentElement.offsetHeight
+        ) {
+            fetchData();
+        }
+    };
+
     const handleImageClick = (value) => {
         setInfoCurrentPhoto([
             {
@@ -380,24 +388,14 @@ export default function BodyPinterest() {
         localStorage.setItem("imagenSeleccionada", JSON.stringify(datos))
     };
 
-    window.onscroll = () => {
-        if (
-            window.innerHeight + document.documentElement.scrollTop === document.documentElement.offsetHeight
-        ) {
-            fetchData();
-        }
-    };
-
     return (
         <div className="container-fluid bodyPinterest">
             <div className="mb-4 mt-5">
 
-                {noImages ? (
-                    null
-                ) : (
+                {noImages ? (null) : (
                     <h2> Busqueda: {busqueda} </h2>
                 )}
-                
+
                 <InfiniteScroll
                     dataLength={imagen.length}
                     next={fetchData}
@@ -439,9 +437,12 @@ export default function BodyPinterest() {
                     </>
                 ) : null}
 
-                <ToastContainer autoClose={1200} />
+                <ToastContainer autoClose={400} />
 
             </div>
         </div>
     );
 }
+
+
+

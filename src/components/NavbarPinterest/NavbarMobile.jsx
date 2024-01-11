@@ -2,18 +2,35 @@ import "./NavbarMobile.scss"
 import { MdHomeFilled } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { BiSolidCategory } from "react-icons/bi";
+import { IoSave } from "react-icons/io5";
+import { storeZustand } from "../../zustand.jsx";
+import { useEffect } from "react";
 
 export default function NavbarMobile() {
+    const { datosPerfil, setPrimeraLetraNombre, primeraLetraNombre } = storeZustand();
+
+    useEffect(() => {
+        if (datosPerfil.nombre === undefined || datosPerfil.nombre === "") {
+            setPrimeraLetraNombre("?")
+        } else {
+            setPrimeraLetraNombre(datosPerfil.nombre[0])
+        }
+    }, [primeraLetraNombre])
+
+    const isPinterestEndpoint = location.pathname === "/pinterest";
 
     return (
         <div className="contenedor-navbar-mobile">
 
-            <Link to={"/"}>
-                <div className="logo-e-imagen">
-                    <img className="logo-e-imagen-img" src="/img/logoo-pinterest.png" alt="Logo de Pinterest" />
-                </div>
-            </Link>
-
+            {isPinterestEndpoint ? (
+                null
+            ) : (
+                <Link to={"/"}>
+                    <div className="logo-e-imagen">
+                        <img className="logo-e-imagen-img" src="/img/logoo-pinterest.png" alt="Logo de Pinterest" />
+                    </div>
+                </Link>
+            )}
             <div className="navbar-mobile">
                 <Link to={"/"} className="contenedor-icon">
                     <div className="icon"> <MdHomeFilled color="black" size={26} />  </div>
@@ -31,10 +48,15 @@ export default function NavbarMobile() {
                         <BiSolidCategory size={24} color="#000000" />
                     </div>
                 </Link>
+                <Link to={"/favoritas"} className="contenedor-icon">
+                    <div className="icon">
+                        <IoSave size={24} color="#000000" />
+                    </div>
+                </Link>
                 <Link to={"/perfil"} className="contenedor-icon">
                     <div className="icon">
                         <div className="icon-contenedor">
-                            <p> L  </p>
+                            <p> {primeraLetraNombre} </p>
                         </div>
                     </div>
                 </Link>

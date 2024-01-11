@@ -136,7 +136,7 @@ a {
                         padding-bottom: 3px;
                         padding-right: 4px;
                         padding-left: 4px;
-                    
+
                         .popover-texto {
                             margin: auto;
                             color: white;
@@ -223,7 +223,7 @@ a {
 
         .contenedor-ruta {
 
-            .back{
+            .back {
                 display: none;
                 margin-bottom: -3.4%;
                 margin-top: 1.4%;
@@ -250,13 +250,26 @@ a {
     }
 }
 
-@media (min-width: 769px) { 
-    .foto-buscada{
+@media (min-width: 769px) {
+    .foto-buscada {
 
-        .img{
+        .img {
             max-width: 100%;
             max-height: 80vh;
         }
     }
 }
 
+
+
+.form-blue {
+
+    width: 40%;
+    margin: auto;
+
+    h4 {}
+
+    label {
+        font-weight: bolder;
+    }
+}

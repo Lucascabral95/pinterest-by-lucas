@@ -1,8 +1,12 @@
 import "./ImagenesFavoritas.scss"
 import { storeZustand } from "../../zustand.jsx";
+import Skeleton from "react-loading-skeleton";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function ImagenesFavoritas() {
     const { imagenesLocalStorage, setImagenesLocalStorage } = storeZustand();
+    const [loading, setLoading] = useState(false)
 
     const eliminarImagen = (value) => {
         const findImageIndex = imagenesLocalStorage.findIndex((i) => i.url === value);
@@ -19,26 +23,50 @@ export default function ImagenesFavoritas() {
         }
     };
 
+    useEffect(() => {
+        setTimeout(() => {
+            setLoading(true)
+        }, 400);
+    }, [imagenesLocalStorage])
+
     return (
         <div>
-            <h2 className="text-center title-imagenes-favoritas"> Imagenes favoritas guardadas </h2>
+            <h2 className="text-center title-imagenes-favoritas"> Imagenes guardadas </h2>
 
-            <div className="contenedor-imagenes-guardadas">
-                <div className="imagenes">
+
+            {!loading ? (
+                <div className="contenedor-imagenes-guardadas">
                     {imagenesLocalStorage.length > 0 ? (
                         imagenesLocalStorage.map((item, key) => (
                             <div key={key} className="imagenes-img">
-                                <img src={item.url} alt={item.alt} />
-                                <span className="boton" onClick={() => eliminarImagen(item.url)}>
-                                    Eliminar
-                                </span>
+                                <Skeleton height={300} />
                             </div>
                         ))
                     ) : (
                         <p>No hay imágenes disponibles</p>
                     )}
+
                 </div>
-            </div>
+            ) : (
+                <div className="contenedor-imagenes-guardadas">
+                    <div className="imagenes">
+                        {imagenesLocalStorage.length > 0 ? (
+                            imagenesLocalStorage.map((item, key) => (
+                                <div key={key} className="imagenes-img">
+                                    <Link to={`${item.url}`}>
+                                        <img src={item.url} alt={item.alt} />
+                                    </Link>
+                                    <button className="boton" onClick={() => eliminarImagen(item.url)}>
+                                        Eliminar
+                                    </button>
+                                </div>
+                            ))
+                        ) : (
+                            <p>No hay imágenes disponibles</p>
+                        )}
+                    </div>
+                </div>
+            )}
 
         </div>
     )

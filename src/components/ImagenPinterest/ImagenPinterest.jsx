@@ -177,6 +177,8 @@ import moment from "moment"
 import { MdOutlineDescription } from "react-icons/md";
 import { useState, useEffect } from "react"
 import { toast, ToastContainer } from 'react-toastify';
+import NavbarMobile from "../NavbarPinterest/NavbarMobile.jsx";
+
 export default function ImagenPinterest() {
     const { id } = useParams()
     const { infoCurrentPhoto, setImagenesLocalStorage, imagenesLocalStorage } = storeZustand()
@@ -226,7 +228,7 @@ export default function ImagenPinterest() {
 
     useEffect(() => {
         window.scrollTo(0, 0);
-      }, []);
+    }, []);
 
     return (
         <div className="imagen-pinterest">
@@ -273,7 +275,7 @@ export default function ImagenPinterest() {
                                     ) : (
                                         null
                                     )}
-                                    <ToastContainer />
+                                    <ToastContainer autoClose={400} />
                                 </div>
                             </div>
                         </div>
@@ -355,6 +357,8 @@ export default function ImagenPinterest() {
                     </div>
                 </div>
             </div>
+
+<NavbarMobile />
 
         </div>
     )

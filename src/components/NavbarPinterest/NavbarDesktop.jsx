@@ -1,17 +1,18 @@
 import "./NavbarDesktop.scss"
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { Link, useNavigate, useLocation } from 'react-router-dom'
 import { storeZustand } from "../../zustand.jsx"
 import { IoIosCloseCircle } from "react-icons/io";
 import Navbar from "../../JSON/Navbar.json"
 import NavbarMobile from "./NavbarMobile.jsx";
 import NavbarMobileImagen from "./NavbarMobileImagen.jsx";
+import { IoSave } from "react-icons/io5";
 
 export default function NavbarDesktop() {
   const [active, setActive] = useState(1)
   const [inputSelect, setInputSelect] = useState(false)
   const [busquedaNavbar, setBusquedaNavbar] = useState("")
-  const { busqueda, setBusqueda, } = storeZustand()
+  const { busqueda, setBusqueda, datosPerfil } = storeZustand()
   const navigate = useNavigate();
   const [popover, setPopover] = useState({
     elemento1: false,
@@ -57,8 +58,6 @@ export default function NavbarDesktop() {
   }
 
   const ubi = useLocation()
-
-  console.log(`${ubi.pathname}`);
 
   const verseONo = ubi.pathname === "/pinterest" ? true : false
 
@@ -131,16 +130,18 @@ export default function NavbarDesktop() {
             >
               {popover === "elemento2" ? (
                 <div className="popover">
-                  <p className="popover-texto"> Mensajes </p>
+                  {/* <p className="popover-texto"> Mensajes </p> */}
+                  <p className="popover-texto"> Imágenes guardadas </p>
                 </div>
               ) : (
                 null
               )}
               <div>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
                   <path d="M18 12.5a1.5 1.5 0 1 1 .001-3.001A1.5 1.5 0 0 1 18 12.5m-6 0a1.5 1.5 0 1 1 .001-3.001A1.5 1.5 0 0 1 12 12.5m-6 0a1.5 1.5 0 1 1 .001-3.001A1.5 1.5 0 0 1 6 12.5M12 0C5.925 0 1 4.925 1 11c0 2.653.94 5.086 2.504 6.986L2 24l5.336-3.049A10.93 10.93 0 0 0 12 22c6.075 0 11-4.925 11-11S18.075 0 12 0" fill="#666666">
                   </path>
-                </svg>
+                </svg> */}
+                <IoSave size={24} color="#666666" />
               </div>
             </Link>
 
@@ -157,7 +158,11 @@ export default function NavbarDesktop() {
                 null
               )}
               <div>
-                <img src="/img/spyro.png" alt="Foto de perfil" />
+                {datosPerfil.link ? (
+                  <img src={datosPerfil.link} alt="Foto de perfil" />
+                ) : (
+                  <img src="/img/spyro.png" alt="Foto de perfil" />
+                )}
               </div>
             </Link>
 
@@ -186,14 +191,13 @@ export default function NavbarDesktop() {
         </div>
       </div>
 
-
       {/* <NavbarMobile /> */}
 
       {verseONo ? (
         <NavbarMobileImagen />
-        ) : (
-          <NavbarMobile />
-)}
+      ) : (
+        <NavbarMobile />
+      )}
 
     </div>
   )
