@@ -743,6 +743,33 @@
                 }
             }
         }
+        .contenedor-empezar {
+            padding-top: 12%;
+            padding-bottom: 2%;
+            
+            .empezar-titulo {
+                font-size: 38px;
+                margin-top: 20%;
+                margin-bottom: 6%;
+            }
+            
+            .boton-tres {
+                padding: 14px;
+                font-size: 16px;
+                font-weight: 600;
+                margin-top: 2.5%;
+                margin-bottom: 20%;
+            }
+    
+            .marquee {
+                margin-top: 8%;
+                margin-bottom: 1%;
+    
+                .marquee-texto {
+                    font-size: 26px;
+                    font-weight: 600;
+                }
+            }
+        }
     }
-
 }

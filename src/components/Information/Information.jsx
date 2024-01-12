@@ -90,7 +90,8 @@ export default function Information() {
             </div>
 
             <div className="contenedor-positividad"
-                onMouseOver={() => setHoverPositividad(true)}
+                // onMouseOver={() => setHoverPositividad(true)}
+                onWheel={() => setHoverPositividad(true)}
                 onMouseLeave={() => setHoverPositividad(false)}
                 style={{ backgroundColor: hoverPositividad ? "#00422C" : "#FFFEDB", transition: "background-color 0.8s ease" }}
             >
@@ -118,7 +119,7 @@ export default function Information() {
                 </div>
             </div>
 
-            <div className="contenedor-objetivos"
+            {/* <div className="contenedor-objetivos"
                 style={{ backgroundColor: hoverObjetivos ? "#FFE376" : "#FFFEDB", transition: "background-color 0.2s ease" }}
                 onMouseOver={() => setHoverObjetivos(true)}
                 onMouseLeave={() => setHoverObjetivos(false)}>
@@ -143,9 +144,41 @@ export default function Information() {
                         <a target="_blank" href="https://business.pinterest.com/es/shopping/" className="texto-marketing p"> Ver soluciones de compra. </a>
                     </div>
                 </div>
+            </div> */}
+            <div className="contenedor-objetivos"
+                style={{ backgroundColor: hoverObjetivos ? "#FFE376" : "#FFFEDB", transition: "background-color 0.2s ease" }}
+                onWheel={() => setHoverObjetivos(true)}
+                onMouseLeave={() => setHoverObjetivos(false)}
+
+                // onTouchStart={() => setHoverObjetivos(true)}
+                onTouchEnd={() => setHoverObjetivos(false)}
+                onTouchMove={() => setHoverObjetivos(true)}
+                >
+                <h3 className="titulo-objetivos"> Tus objetivos, tu camino </h3>
+                <div className="contenedor-objetivos-categoria">
+                    <div className="objetivos-categoria">
+                        <h3 className="marketing"> Expertos en Marketing </h3>
+                        <p className="texto-marketing"> Usa los anuncios de Pinterest para lograr tus objetivos de marketing, como reconocimiento de marca, consideración y conversiones. Combina formatos flexibles con segmentación personalizada para lanzar campañas exitosas.</p>
+                        <br />
+                        <a target="_blank" href="https://business.pinterest.com/es/advertise/" className="texto-marketing"> Mas informacion sobre los anuncios. </a>
+                    </div>
+                    <div className="objetivos-categoria">
+                        <h5 className="marketing"> Agencias </h5>
+                        <p className="texto-marketing"> Ayuda a tus clientes a lograr resultados increíbles en todo el funnel con contenido inspirador y atractivo. Ofrecemos herramientas especiales para que las agencias desarrollen y hagan crecer la presencia de sus clientes en la plataforma.</p>
+                        <br />
+                        <a target="_blank" href="https://business.pinterest.com/es/agency-resources/" className="texto-marketing"> Ver las herramientas para agencias </a>
+                    </div>
+                    <div className="objetivos-categoria">
+                        <h5 className="marketing"> Comerciantes </h5>
+                        <p className="texto-marketing"> Los compradores en Pinterest gastan el doble al mes que la gente que usa otras plataformas.3 Usa catálogos y anuncios Shopping a fin de llegar a las personas que estén listas para comprar. </p>
+                        <br />
+                        <a target="_blank" href="https://business.pinterest.com/es/shopping/" className="texto-marketing p"> Ver soluciones de compra. </a>
+                    </div>
+                </div>
             </div>
             <div className="contenedor-separador"
-                onMouseOver={() => setHoverSeparador(true)}
+                // onMouseOver={() => setHoverSeparador(true)}
+                onWheel={() => setHoverSeparador(true)}
                 onMouseLeave={() => setHoverSeparador(false)}
             >
                 <div className="separador-superior"
@@ -157,14 +190,16 @@ export default function Information() {
             </div>
             <div className="contenedor-empezar"
                 style={{ backgroundColor: hoverSeparador ? "#FFFEDB" : "#CDF9CD" }}
-                onMouseOver={() => setHoverEmpezar(true)}
+                // onMouseOver={() => setHoverEmpezar(true)}
+                onWheel={() => setHoverEmpezar(true)}
                 onMouseLeave={() => setHoverEmpezar(false)}
             >
                 <h3 className="empezar-titulo"> Empieza hoy mismo</h3>
                 <div className="d-flex justify-content-center align-items-center">
                     <a href="https://www.pinterest.nz/business/create/" target="_blank"
                         style={{ backgroundColor: hoverEmpezar ? "#CDF9CD" : "#FFFEDB" }}
-                        onMouseOver={() => setHoverBotonCrear(true)}
+                        // onMouseOver={() => setHoverBotonCrear(true)}
+                        onWheel={() => setHoverBotonCrear(true)}
                         onMouseLeave={() => setHoverBotonCrear(false)}
                         className="boton-tres" > Crear cuenta </a>
                 </div>

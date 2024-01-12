@@ -225,6 +225,7 @@ export default function Profile() {
                 <div className="contenedor-botones">
                     <Link to={"/favoritas"} title="Compartir" className="btn"> Fotos favoritas </Link>
                     <Link to={"/configuration"} title="Editar perfil" className="btn"> Editar perfil </Link>
+                    <Link to={"/empresa"} title="Editar perfil" className="btn"> Empresa </Link>
                 </div>
                 <div className="guardados">
                     <p> Info </p>
