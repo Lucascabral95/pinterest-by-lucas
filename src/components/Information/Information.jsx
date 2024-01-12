@@ -149,11 +149,10 @@ export default function Information() {
                 style={{ backgroundColor: hoverObjetivos ? "#FFE376" : "#FFFEDB", transition: "background-color 0.2s ease" }}
                 onWheel={() => setHoverObjetivos(true)}
                 onMouseLeave={() => setHoverObjetivos(false)}
-
                 // onTouchStart={() => setHoverObjetivos(true)}
                 onTouchEnd={() => setHoverObjetivos(false)}
                 onTouchMove={() => setHoverObjetivos(true)}
-                >
+            >
                 <h3 className="titulo-objetivos"> Tus objetivos, tu camino </h3>
                 <div className="contenedor-objetivos-categoria">
                     <div className="objetivos-categoria">
@@ -180,6 +179,9 @@ export default function Information() {
                 // onMouseOver={() => setHoverSeparador(true)}
                 onWheel={() => setHoverSeparador(true)}
                 onMouseLeave={() => setHoverSeparador(false)}
+                // onTouchStart={() => setHoverSeparador(true)}
+                onTouchEnd={() => setHoverSeparador(false)}
+                onTouchMove={() => setHoverSeparador(true)}
             >
                 <div className="separador-superior"
                     style={{ backgroundColor: hoverSeparador ? "#FFFEDB" : (hoverObjetivos ? "#FFE376" : "#FFFEDB"), transition: "background-color 0.2s ease" }}>
@@ -193,13 +195,15 @@ export default function Information() {
                 // onMouseOver={() => setHoverEmpezar(true)}
                 onWheel={() => setHoverEmpezar(true)}
                 onMouseLeave={() => setHoverEmpezar(false)}
+                // onTouchStart={() => setHoverEmpezar(true)}
+                onTouchEnd={() => setHoverEmpezar(false)}
+                onTouchMove={() => setHoverEmpezar(true)}
             >
                 <h3 className="empezar-titulo"> Empieza hoy mismo</h3>
                 <div className="d-flex justify-content-center align-items-center">
                     <a href="https://www.pinterest.nz/business/create/" target="_blank"
                         style={{ backgroundColor: hoverEmpezar ? "#CDF9CD" : "#FFFEDB" }}
-                        // onMouseOver={() => setHoverBotonCrear(true)}
-                        onWheel={() => setHoverBotonCrear(true)}
+                        onMouseOver={() => setHoverBotonCrear(true)}
                         onMouseLeave={() => setHoverBotonCrear(false)}
                         className="boton-tres" > Crear cuenta </a>
                 </div>

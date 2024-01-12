@@ -274,7 +274,7 @@
 
         .boton-tres {
             color: #00422C;
-            padding: 24px;
+            padding: 18px;
             background-color: #CDF9CD;
             border: solid 2px #00422C;
             font-size: 16px;
@@ -304,8 +304,83 @@
 
 // medias  medias  medias  medias  medias  medias  medias  medias  medias  medias  //
 
+// @media (min-width: 1031px) and (max-width: 1912px) {
+//     .contenedor-carousel {
+
+//         .contenedor {
+//             .cont {
+//                 display: inline-block;
+//                 width: 100%;
+
+//                 .mitad-uno {
+//                     width: 100%;
+//                     padding-top: 10vw;
+//                     // height: 381px;
+//                     height: 200px;
+
+//                     .subtitulo {
+//                         font-size: 15px;
+//                         font-weight: 600;
+//                     }
+
+//                     .tituloo {
+//                         font-size: 38px;
+//                         font-weight: 600;
+//                     }
+//                 }
+
+//                 .mitad-dos {
+//                     width: 100%;
+//                     // height: auto;
+//                     height: 200px;
+
+//                     img {
+//                         height: auto;
+//                         width: 100%;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
 @media (min-width: 768px) and (max-width: 1030px) {
     .information {
+
+        .contenedor-carousel {
+            .contenedor {
+                .cont {
+                    display: inline-block;
+                    width: 100%;
+
+                    .mitad-uno {
+                        width: 100%;
+                        padding-top: 10vw;
+                        height: 381px;
+
+                        .subtitulo {
+                            font-size: 15px;
+                            font-weight: 600;
+                        }
+
+                        .tituloo {
+                            font-size: 38px;
+                            font-weight: 600;
+                        }
+                    }
+
+                    .mitad-dos {
+                        width: 100%;
+                        height: auto;
+
+                        img {
+                            height: auto;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
 
         .contenedor-positividad {
             padding-top: 13%;
@@ -348,7 +423,6 @@
                 width: 90%;
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
-                // gap: 22px;
 
                 .objetivos-categoria {
                     .marketing {
@@ -373,31 +447,32 @@
                         }
                     }
 
-                    .p{
-                        margin-top: 6% !important ;
+                    .p {
+                        margin-top: 6% !important;
                     }
                 }
             }
         }
+
         .contenedor-empezar {
             padding-top: 4%;
             padding-bottom: 3%;
-    
+
             .empezar-titulo {
                 font-size: 48px;
             }
-    
+
             .boton-tres {
                 padding: 19px;
                 font-size: 16px;
                 font-weight: 600;
                 margin-top: 2.5%;
             }
-    
+
             .marquee {
                 margin-top: 8%;
                 margin-bottom: 1%;
-    
+
                 .marquee-texto {
                     font-size: 28px;
                     font-weight: 600;
@@ -554,16 +629,17 @@
                 }
             }
         }
+
         .contenedor-empezar {
             padding-top: 12%;
             padding-bottom: 2%;
-            
+
             .empezar-titulo {
                 font-size: 38px;
                 margin-top: 20%;
                 margin-bottom: 6%;
             }
-            
+
             .boton-tres {
                 padding: 14px;
                 font-size: 18px;
@@ -571,11 +647,11 @@
                 margin-top: 2.5%;
                 margin-bottom: 20%;
             }
-    
+
             .marquee {
                 margin-top: 8%;
                 margin-bottom: 1%;
-    
+
                 .marquee-texto {
                     font-size: 26px;
                     font-weight: 600;
@@ -696,12 +772,13 @@
                 }
             }
         }
+
         .contenedor-objetivos {
             width: 100%;
             margin: auto;
             padding-top: 10%;
             padding-bottom: 8%;
-    
+
             .titulo-objetivos {
                 font-weight: 500;
                 font-size: 38px;
@@ -710,32 +787,32 @@
                 margin-top: 22%;
                 margin-bottom: 22%;
             }
-    
+
             .contenedor-objetivos-categoria {
                 margin: auto;
                 width: 92%;
                 display: flex;
                 flex-wrap: wrap;
-    
+
                 .objetivos-categoria {
                     .marketing {
                         font-size: 22px;
                         font-weight: 600;
                     }
-    
+
                     .texto-marketing {
                         font-size: 16px;
                         position: relative;
                         top: 6px;
                         font-weight: 500;
                     }
-    
+
                     a {
                         font-size: 16px;
                         position: relative;
                         bottom: 200px;
                         font-weight: 600;
-    
+
                         &:hover {
                             padding: 12px;
                         }
@@ -743,16 +820,17 @@
                 }
             }
         }
+
         .contenedor-empezar {
             padding-top: 12%;
             padding-bottom: 2%;
-            
+
             .empezar-titulo {
                 font-size: 38px;
                 margin-top: 20%;
                 margin-bottom: 6%;
             }
-            
+
             .boton-tres {
                 padding: 14px;
                 font-size: 16px;
@@ -760,11 +838,11 @@
                 margin-top: 2.5%;
                 margin-bottom: 20%;
             }
-    
+
             .marquee {
                 margin-top: 8%;
                 margin-bottom: 1%;
-    
+
                 .marquee-texto {
                     font-size: 26px;
                     font-weight: 600;
