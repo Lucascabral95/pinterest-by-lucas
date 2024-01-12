@@ -20,7 +20,7 @@ function App() {
   }
 
   useEffect(() => {
-  }, []); 
+  }, []);
 
 
   return (
@@ -48,8 +48,8 @@ function App() {
               <p style={{ color: active === 2 ? "white" : "black" }}> Explorar</p>
             </div>
           </Link>
-          <Link className="categoria-crear" onClick={() => handleClick(3)} title='Crear'
-            style={active === 3 ? estilosActive : null}>
+          <Link className="categoria-crear" onClick={() => handleClick(3)} title='Empresa'
+            style={active === 3 ? estilosActive : null} >
             <div className="contenedor-categoria">
               <p style={{ color: active === 3 ? "white" : "black" }}> Crear </p>
             </div>

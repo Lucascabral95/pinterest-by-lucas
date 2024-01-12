@@ -1,0 +1,748 @@
+.information {
+    background-color: #00261A;
+    font-family: sans-serif;
+    padding-top: 8%;
+    overflow: hidden;
+    max-width: 1920px;
+    margin: auto;
+
+    .contenedor-texto {
+        color: #CDF9cd;
+        margin: auto;
+        width: 700px;
+        font-weight: 600;
+
+        .title {
+            text-align: center;
+            font-size: 72px;
+            margin-bottom: 11%;
+        }
+
+        .texto {
+            font-size: 22px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .dos {
+            margin-top: 5%;
+            margin-bottom: 40px;
+        }
+
+        .contenedor-boton-crear-cuenta {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .cont-boton {
+                border: 2px solid #FFFEDB;
+                padding: 18px;
+                border-radius: 50px;
+                cursor: pointer;
+                margin-bottom: 120px;
+
+                .boton-crear-cuenta {
+                    color: #CDF9CD;
+                    background-color: #00261A;
+                    font-size: 16px;
+                    font-weight: 600;
+                    border-radius: 20px;
+                }
+
+                &:hover .boton-crear-cuenta {
+                    background-color: #FFFEDB;
+                    color: #00261A;
+                }
+
+                &:hover {
+                    color: #00261A;
+                    background-color: #FFFEDB;
+                }
+            }
+        }
+    }
+
+    .contenedor-imagen {
+        .imagen {
+            width: 100%;
+        }
+    }
+
+    .contenedor-carousel {
+        border: none;
+        background-color: white;
+
+        .contenedor {
+
+            .cont {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .mitad-uno {
+                    background-color: white;
+                    width: 50%;
+                    max-height: 966px;
+
+                    .subtitulo {
+                        font-family: sans-serif;
+                        font-weight: 700;
+                        text-align: center;
+                    }
+
+                    .tituloo {
+                        font-family: sans-serif;
+                        font-size: 48px;
+                        font-weight: 500;
+                        text-align: center;
+                    }
+
+                    .boton {
+                        background-color: black;
+                        color: white;
+                        padding: 18px;
+                        font-weight: 700;
+                        border-radius: 50px;
+                        border: none;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+
+                .mitad-dos {
+                    width: 50%;
+                    height: 966px;
+
+                    img {
+                        max-width: 100%;
+                        height: 1000px;
+                    }
+                }
+            }
+        }
+    }
+
+    .contenedor-positividad {
+        background-color: #FFFEDB;
+        padding-top: 13%;
+        padding-bottom: 13%;
+        border: none;
+
+        .contendor-de-positividad {
+            margin: auto;
+            width: 900px;
+
+            .titulo-positividad {
+                font-size: 64px;
+                font-family: sans-serif;
+                font-weight: 500;
+                color: #00422C;
+                text-align: center;
+            }
+
+            .texto-positividad {
+                font-size: 24px;
+                font-family: sans-serif;
+                font-weight: 600;
+                color: #00422C;
+                text-align: center;
+                margin-top: 4%;
+            }
+
+            .boton-dos {
+                padding: 18px;
+                border: solid 2px #00422C;
+                background-color: #FFFEDB;
+                font-size: 16px;
+                color: #00422C;
+                font-weight: 600;
+                border-radius: 50px;
+                margin-top: 2%;
+
+                &:hover {
+                    color: #FFFEDB;
+                    background-color: #00422C;
+                    border: solid 2px #FFFEDB;
+                }
+            }
+        }
+    }
+
+    .contenedor-collage {
+
+        .contenedor {
+            display: flex;
+
+            .cont-img-uno {
+                width: 50%;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .cont-img-dos {
+                width: 50%;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .contenedor-objetivos {
+        background-color: #FFE376;
+        width: 100%;
+        margin: auto;
+        padding-top: 10%;
+        padding-bottom: 8%;
+
+        .titulo-objetivos {
+            color: #00422C;
+            font-size: 64px;
+            text-align: center;
+            margin-bottom: 7%;
+            font-weight: 600;
+        }
+
+        .contenedor-objetivos-categoria {
+            display: flex;
+            column-count: 3;
+            gap: 20px;
+            width: 76%;
+            margin: auto;
+
+            .objetivos-categoria {
+                .marketing {
+                    color: #00422C;
+                    font-size: 24px;
+                    font-weight: 600;
+                    font-family: sans-serif;
+                }
+
+                .texto-marketing {
+                    color: #00422C;
+                    font-size: 18px;
+                    position: relative;
+                    top: 6px;
+                    font-family: sans-serif;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: #00422C;
+                    font-size: 18px;
+                    position: relative;
+                    bottom: 200px;
+                    font-family: sans-serif;
+
+                    &:hover {
+                        background-color: #00422C;
+                        padding: 12px;
+                        border-radius: 50px;
+                        color: #FFE376;
+                    }
+                }
+            }
+        }
+    }
+
+    .contenedor-separador {
+        .separador-superior {
+            height: 8vw;
+        }
+
+        .separador-inferior {
+            height: 14vh;
+        }
+    }
+
+    .contenedor-empezar {
+        background-color: white;
+        transition: background-color 0.1s ease;
+        padding-top: 4%;
+        padding-bottom: 3%;
+
+        .empezar-titulo {
+            text-align: center;
+            font-weight: 600;
+            font-size: 64px;
+            color: #00422C
+        }
+
+        .boton-tres {
+            color: #00422C;
+            padding: 24px;
+            background-color: #CDF9CD;
+            border: solid 2px #00422C;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 50px;
+            margin-top: 2.5%;
+        }
+
+        .marquee {
+            margin-top: 8%;
+            margin-bottom: 1%;
+
+            .marquee-texto {
+                font-size: 16px;
+                color: #00422C;
+                font-weight: 600;
+            }
+        }
+
+        &:hover {
+            background-color: #CDF9CD;
+            transition: background-color 0.1s ease;
+        }
+    }
+}
+
+
+// medias  medias  medias  medias  medias  medias  medias  medias  medias  medias  //
+
+@media (min-width: 768px) and (max-width: 1030px) {
+    .information {
+
+        .contenedor-positividad {
+            padding-top: 13%;
+            padding-bottom: 13%;
+
+            .contendor-de-positividad {
+                margin: auto;
+                width: 90%;
+
+                .titulo-positividad {
+                    font-size: 48px;
+                }
+
+                .texto-positividad {
+                    font-size: 20px;
+                    margin-top: 4%;
+                }
+
+                .boton-dos {
+                    padding: 14px;
+                    font-size: 16px;
+                    margin-top: 2%;
+                }
+            }
+        }
+
+        .contenedor-objetivos {
+            width: 100%;
+            margin: auto;
+            padding-top: 10%;
+            padding-bottom: 8%;
+
+            .titulo-objetivos {
+                font-size: 48px;
+                margin-bottom: 7%;
+            }
+
+            .contenedor-objetivos-categoria {
+                margin: auto;
+                width: 90%;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                // gap: 22px;
+
+                .objetivos-categoria {
+                    .marketing {
+                        font-size: 24px;
+                    }
+
+                    .texto-marketing {
+                        font-size: 18px;
+                        position: relative;
+                        top: 6px;
+                        font-weight: 500;
+                    }
+
+                    a {
+                        font-size: 18px;
+                        position: relative;
+                        bottom: 200px;
+                        font-weight: 500;
+
+                        &:hover {
+                            padding: 12px;
+                        }
+                    }
+
+                    .p{
+                        margin-top: 6% !important ;
+                    }
+                }
+            }
+        }
+        .contenedor-empezar {
+            padding-top: 4%;
+            padding-bottom: 3%;
+    
+            .empezar-titulo {
+                font-size: 48px;
+            }
+    
+            .boton-tres {
+                padding: 19px;
+                font-size: 16px;
+                font-weight: 600;
+                margin-top: 2.5%;
+            }
+    
+            .marquee {
+                margin-top: 8%;
+                margin-bottom: 1%;
+    
+                .marquee-texto {
+                    font-size: 28px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:468px) and (max-width: 767px) {
+    .information {
+
+        .contenedor-texto {
+            width: 90%;
+
+            .title {
+                font-size: 56px;
+            }
+
+            .texto {
+                font-size: 22px;
+            }
+
+            .contenedor-boton-crear-cuenta {
+                .cont-boton {
+                    margin-bottom: 70px;
+                }
+            }
+        }
+
+        .contenedor-carousel {
+
+            .contenedor {
+                .cont {
+                    display: inline-block;
+                    width: 100%;
+
+                    .mitad-uno {
+                        width: 100%;
+                        height: 381px;
+                        padding-top: 10vw;
+
+                        .subtitulo {
+                            font-size: 15px;
+                            font-weight: 600;
+                        }
+
+                        .tituloo {
+                            font-size: 38px;
+                            font-weight: 600;
+                        }
+                    }
+
+                    .mitad-dos {
+                        width: 100%;
+                        height: auto;
+
+                        img {
+                            height: auto;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .contenedor-positividad {
+            padding-top: 13%;
+            padding-bottom: 13%;
+
+            .contendor-de-positividad {
+                margin: auto;
+                width: 90%;
+
+                .titulo-positividad {
+                    font-size: 38px;
+                }
+
+                .texto-positividad {
+                    font-size: 20px;
+                    margin-top: 4%;
+                }
+
+                .boton-dos {
+                    padding: 14px;
+                    font-size: 16px;
+                    margin-top: 2%;
+                }
+            }
+        }
+
+        .contenedor-collage {
+            .contenedor {
+                display: block;
+
+                .cont-img-uno {
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .cont-img-dos {
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .contenedor-objetivos {
+            width: 100%;
+            margin: auto;
+            padding-top: 10%;
+            padding-bottom: 8%;
+
+            .titulo-objetivos {
+                font-size: 38px;
+                margin-bottom: 7%;
+            }
+
+            .contenedor-objetivos-categoria {
+                margin: auto;
+                width: 96%;
+                display: flex;
+                flex-wrap: wrap;
+
+                .objetivos-categoria {
+                    .marketing {
+                        font-size: 25px;
+                        font-weight: 700;
+                    }
+
+                    .texto-marketing {
+                        font-size: 18px;
+                        position: relative;
+                        top: 6px;
+                        font-weight: 600;
+                    }
+
+                    a {
+                        font-size: 18px;
+                        position: relative;
+                        bottom: 200px;
+                        font-weight: 600;
+
+                        &:hover {
+                            padding: 12px;
+                        }
+                    }
+                }
+            }
+        }
+        .contenedor-empezar {
+            padding-top: 12%;
+            padding-bottom: 2%;
+            
+            .empezar-titulo {
+                font-size: 38px;
+                margin-top: 20%;
+                margin-bottom: 6%;
+            }
+            
+            .boton-tres {
+                padding: 14px;
+                font-size: 18px;
+                font-weight: 600;
+                margin-top: 2.5%;
+                margin-bottom: 20%;
+            }
+    
+            .marquee {
+                margin-top: 8%;
+                margin-bottom: 1%;
+    
+                .marquee-texto {
+                    font-size: 26px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 467px) {
+    .information {
+
+        .contenedor-texto {
+            width: 90%;
+
+            .title {
+                font-size: 56px;
+            }
+
+            .texto {
+                font-size: 22px;
+            }
+
+            .contenedor-boton-crear-cuenta {
+                .cont-boton {
+                    margin-bottom: 70px;
+                }
+            }
+        }
+
+        .contenedor-carousel {
+
+            .contenedor {
+                .cont {
+                    display: inline-block;
+                    width: 100%;
+                    margin: auto;
+
+                    .mitad-uno {
+                        width: 100%;
+                        height: 320px;
+                        padding-top: 12vw;
+                        padding-left: 4%;
+                        padding-right: 4%;
+
+                        .subtitulo {
+                            font-size: 14px;
+                            font-weight: 600;
+                        }
+
+                        .tituloo {
+                            font-size: 26px;
+                            font-weight: 600;
+                        }
+
+                        .boton {
+                            padding: 14px;
+                            margin-top: 4vw;
+                        }
+                    }
+
+                    .mitad-dos {
+                        width: 100%;
+                        height: auto;
+
+                        img {
+                            height: auto;
+                            width: auto;
+                        }
+                    }
+                }
+            }
+        }
+
+        .contenedor-positividad {
+            padding-top: 13%;
+            padding-bottom: 13%;
+
+            .contendor-de-positividad {
+                margin: auto;
+                width: 90%;
+
+                .titulo-positividad {
+                    font-size: 38px;
+                }
+
+                .texto-positividad {
+                    font-size: 20px;
+                    margin-top: 4%;
+                }
+
+                .boton-dos {
+                    padding: 14px;
+                    font-size: 16px;
+                    margin-top: 2%;
+                }
+            }
+        }
+
+        .contenedor-collage {
+            .contenedor {
+                display: block;
+
+                .cont-img-uno {
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .cont-img-dos {
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .contenedor-objetivos {
+            width: 100%;
+            margin: auto;
+            padding-top: 10%;
+            padding-bottom: 8%;
+    
+            .titulo-objetivos {
+                font-weight: 500;
+                font-size: 38px;
+                margin-bottom: 7%;
+                padding: 16px;
+                margin-top: 22%;
+                margin-bottom: 22%;
+            }
+    
+            .contenedor-objetivos-categoria {
+                margin: auto;
+                width: 92%;
+                display: flex;
+                flex-wrap: wrap;
+    
+                .objetivos-categoria {
+                    .marketing {
+                        font-size: 22px;
+                        font-weight: 600;
+                    }
+    
+                    .texto-marketing {
+                        font-size: 16px;
+                        position: relative;
+                        top: 6px;
+                        font-weight: 500;
+                    }
+    
+                    a {
+                        font-size: 16px;
+                        position: relative;
+                        bottom: 200px;
+                        font-weight: 600;
+    
+                        &:hover {
+                            padding: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

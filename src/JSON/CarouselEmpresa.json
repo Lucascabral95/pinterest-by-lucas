@@ -1,0 +1,26 @@
+[
+    {
+     "titulo": "Más clics a un menor costo. Con los anuncios con enlaces directos, es así.",
+     "subtitulo": "",
+     "color": "white",
+     "foto": "https://images.ctfassets.net/h67z7i6sbjau/1Ldrd5WNDT4SB7VSRkOtvj/2d1c22c11cc8e2b91c07727783a56a78/Blog_direct_links_hero_en_ES__int___3_.png?fm=webp&q=85&w=2880&h=2880", 
+     "boton": "Mas informacion",
+     "description": "Anuncios"   
+    },
+    {
+     "titulo": "Descubre las tendencias de mañana, hoy.",
+     "subtitulo": "Pinterest Predicts",
+     "color": "white",
+     "foto": "https://images.ctfassets.net/h67z7i6sbjau/1Ldrd5WNDT4SB7VSRkOtvj/2d1c22c11cc8e2b91c07727783a56a78/Blog_direct_links_hero_en_ES__int___3_.png?fm=webp&q=85&w=2880&h=2880", 
+     "boton": "Explora las tendencias",
+     "description": "Exploracion"   
+    },
+    {
+     "titulo": "Nueva investigación de celebración de Pinterest y GWI.",
+     "subtitulo": "Estacionales",
+     "color": "#CDF9cd",
+     "foto": "https://images.ctfassets.net/h67z7i6sbjau/2VFM0PnbgJtr94XjICuONx/8693868abe4f177506e1ad709e7b5c46/HP_hero_new_gen_blog__2_.jpg?fm=webp&q=85&w=2880&h=2880", 
+     "boton": "Ver informe",
+     "description": "Ver informe"   
+    }
+]

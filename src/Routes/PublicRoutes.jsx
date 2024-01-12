@@ -9,9 +9,9 @@ import DatosPersonales from "../components/DatosPersonales/DatosPersonales.jsx"
 import SearchMobile from "../components/Search/SearchMobile.jsx"
 import Scroll from "../scrol.jsx"
 import ImagenesFavoritas from "../components/ImagenesFavoritas/ImagenesFavoritas.jsx"
-import NavbarMobile from "../components/NavbarPinterest/NavbarMobile.jsx"
+import Information from "../components/Information/Information.jsx"
 
-export default function PublicRoutes() {
+export default function PublicRoutes() {      
 
     return (
 
@@ -30,6 +30,7 @@ export default function PublicRoutes() {
                 <Route path='/scroll' element={<Scroll />} />
 
                 <Route path='/favoritas' element={<ImagenesFavoritas />} />
+                <Route path='/empresa' element={<Information />} />
             </Routes>
 
         </>
