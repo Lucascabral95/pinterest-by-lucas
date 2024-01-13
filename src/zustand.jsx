@@ -27,5 +27,8 @@ export const storeZustand = create((set) => ({
   setDatosPerfil: (data) => set({ datosPerfil: data }), // almacena datos de usuario
 
   primeraLetraNombre: "", // primera letra del nombre registrado por el usuario
-  setPrimeraLetraNombre: (name) => set({ primeraLetraNombre: name })
+  setPrimeraLetraNombre: (name) => set({ primeraLetraNombre: name }),
+
+  cateActual: null,
+  setCateActual: (num) => set({ cateActual: num })
     }))

@@ -1,93 +1,14 @@
 import "./About.scss"
 import { MdOutlineFileUpload } from "react-icons/md";
 import { IoChatbubbleEllipses } from "react-icons/io5";
-import Categorias from "../../JSON/Busqueda.json"
-import { GrFormPreviousLink } from "react-icons/gr";
-import { GrFormNextLink } from "react-icons/gr";
-import { useState, useEffect } from "react";
+import AboutCabecera from "./AboutCabecera.jsx";
 
 export default function About() {
-    const [categoriaActual, setCategoriaActual] = useState(null)
-
-    const handleAnterior = () => {
-        setCategoriaActual(categoriaActual - 1)
-    }
-    const handleSiguiente = () => {
-        setCategoriaActual(categoriaActual + 1)
-    }
-
-    // useEffect(() => {
-    //     function handleResize() {
-    //         if (window.innerWidth < 468) {
-    //             setCategoriaActual(1);
-    //         } else if (window.innerWidth < 600) {
-    //             setCategoriaActual(2);
-    //         } else if (window.innerWidth < 900) {
-    //             setCategoriaActual(3);
-    //         } else {
-    //             setCategoriaActual(4);
-    //         }
-    //     }
-    //     window.addEventListener('resize', handleResize);
-    //     return () => {
-    //         window.removeEventListener('resize', handleResize);
-    //     };
-    // }, []);
-    useEffect(() => {
-        function handleResize() {
-            if (window.innerWidth < 468) {
-                setCategoriaActual(1);
-            } else if (window.innerWidth < 600) {
-                setCategoriaActual(2);
-            } else if (window.innerWidth < 900) {
-                setCategoriaActual(3);
-            } else {
-                setCategoriaActual(4);
-            }
-        }
-        handleResize();
-        window.addEventListener('resize', handleResize);
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
-
 
     return (
         <div className="about">
 
-            <div className="contenedor-titlo">
-                <div className="contenedor">
-                    <h1 className="titulo-pinterest"> Todo acerca de Pinterest </h1>
-                </div>
-            </div>
-
-            <div className="contenedor-informacion">
-                <div className="secciones">
-                    <div className="contenedor-icon">
-                        {(categoriaActual - categoriaActual) === 0 ? (
-                            null
-                        ) : (
-                            <GrFormPreviousLink onClick={handleAnterior} size={30} color="#d7edff" />
-                        )
-                        }
-                    </div>
-                    {Categorias.slice((categoriaActual - categoriaActual), categoriaActual).map((item, index) => (
-                        <div key={index} className="seccion">
-                            <a href={`#${item.key}`} className="seccion-texto" style={{ textDecoration: "none" }}>
-                                {item.titulo}
-                            </a>
-                        </div>
-                    ))}
-                    <div className="contenedor-icon">
-                        {categoriaActual === 7 ? (
-                            null
-                        ) : (
-                            <GrFormNextLink onClick={handleSiguiente} size={30} color="#d7edff" />
-                        )}
-                    </div>
-                </div>
-            </div>
+            <AboutCabecera />
 
             <div className="cuerpo-about">
                 <h2 className="cuerpo-titulo" id="que-es-pinterest"> ¿Qué es Pinterest? </h2>
