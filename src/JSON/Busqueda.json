@@ -1,0 +1,30 @@
+[
+  {
+    "titulo": "¿Qué es Pinterest?",
+    "key": "que-es-pinterest"
+  },
+  {
+    "titulo": "Explorar el feed de inicio",
+    "key": "feed"
+  },
+  {
+    "titulo": "Descubre ideas",
+    "key": "ideas"
+  },
+  {
+    "titulo": "Guardar, compartir y comprar Pines",
+    "key": "Comprar pines"
+  },
+  {
+    "titulo": "Crear Pines",
+    "key": "pines"
+  },
+  {
+    "titulo": "Crear Tableros",
+    "key": "Tableros"
+  },
+  {
+    "titulo": "Ver tu perfil",
+    "key": "perfil"
+  }
+]

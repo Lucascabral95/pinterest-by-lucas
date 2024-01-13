@@ -304,47 +304,7 @@
 
 // medias  medias  medias  medias  medias  medias  medias  medias  medias  medias  //
 
-// @media (min-width: 1031px) and (max-width: 1912px) {
-//     .contenedor-carousel {
-
-//         .contenedor {
-//             .cont {
-//                 display: inline-block;
-//                 width: 100%;
-
-//                 .mitad-uno {
-//                     width: 100%;
-//                     padding-top: 10vw;
-//                     // height: 381px;
-//                     height: 200px;
-
-//                     .subtitulo {
-//                         font-size: 15px;
-//                         font-weight: 600;
-//                     }
-
-//                     .tituloo {
-//                         font-size: 38px;
-//                         font-weight: 600;
-//                     }
-//                 }
-
-//                 .mitad-dos {
-//                     width: 100%;
-//                     // height: auto;
-//                     height: 200px;
-
-//                     img {
-//                         height: auto;
-//                         width: 100%;
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
-
-@media (min-width: 768px) and (max-width: 1030px) {
+@media (min-width: 768px) and (max-width: 1200px) {
     .information {
 
         .contenedor-carousel {
