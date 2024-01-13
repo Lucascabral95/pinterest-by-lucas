@@ -7,7 +7,7 @@ import { GrFormNextLink } from "react-icons/gr";
 import { useState, useEffect } from "react";
 
 export default function About() {
-    const [categoriaActual, setCategoriaActual] = useState(4)
+    const [categoriaActual, setCategoriaActual] = useState(null)
 
     const handleAnterior = () => {
         setCategoriaActual(categoriaActual - 1)
@@ -16,6 +16,23 @@ export default function About() {
         setCategoriaActual(categoriaActual + 1)
     }
 
+    // useEffect(() => {
+    //     function handleResize() {
+    //         if (window.innerWidth < 468) {
+    //             setCategoriaActual(1);
+    //         } else if (window.innerWidth < 600) {
+    //             setCategoriaActual(2);
+    //         } else if (window.innerWidth < 900) {
+    //             setCategoriaActual(3);
+    //         } else {
+    //             setCategoriaActual(4);
+    //         }
+    //     }
+    //     window.addEventListener('resize', handleResize);
+    //     return () => {
+    //         window.removeEventListener('resize', handleResize);
+    //     };
+    // }, []);
     useEffect(() => {
         function handleResize() {
             if (window.innerWidth < 468) {
@@ -28,11 +45,13 @@ export default function About() {
                 setCategoriaActual(4);
             }
         }
+        handleResize();
         window.addEventListener('resize', handleResize);
         return () => {
             window.removeEventListener('resize', handleResize);
         };
-    }, [categoriaActual]);
+    }, []);
+
 
     return (
         <div className="about">
