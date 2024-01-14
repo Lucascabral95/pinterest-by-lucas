@@ -1,19 +1,19 @@
 .about {
     background-color: white;
-
+    
     .cuerpo-about {
         max-width: 1600px;
         margin: auto;
         display: flex;
-
+        
         #contenedor-articulos-mobile {
             display: none;
         }
-
+        
         .cuerpo-about-info {
             width: 667px;
             margin-left: 18vw;
-
+            
             .cuerpo-titulo {
                 font-family: 16px;
                 font-family: sans-serif;
@@ -22,13 +22,13 @@
                 margin-top: 3.5%;
                 margin-bottom: 3.5%;
             }
-
+            
             .cuerpo-texto {
                 font-size: 18px;
                 font-family: Arial, Helvetica, sans-serif;
                 font-weight: 500;
                 color: #004BA9;
-
+                
                 span {
                     &:hover {
                         color: #57a9e0;
@@ -36,21 +36,85 @@
                     }
                 }
             }
-
+            
+            a {
+                color: #004BA9;
+                font-weight: 500;
+                
+                &:hover {
+                    color: #57a9e0;
+                    cursor: pointer;
+                }
+            }
+            
+            ul {
+                li {
+                    font-size: 18px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-weight: 500;
+                    color: #004BA9;
+                }
+            }
+            
             .contenedor-img {
                 .img-pines {
                     width: 100%;
                     height: auto;
                 }
             }
-
+            
+            .contenedor-collapse {
+                
+                .collapse {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                
+                .collapse-interior {
+                    margin-left: 2%;
+                    margin-top: 3%;
+                }
+            }
+            
+            .hr-collapse {
+                margin: 20px auto;
+                color: #004BA9;
+                height: 100px;
+            }
+            
+            .web-android-ios {
+                margin-top: 6%;
+                margin-bottom: 6%;
+                
+                a {
+                    margin-right: 7%;
+                    font-weight: 600;
+                    font-size: 18px;
+                }
+            }
+            
+            .titulo-pinterest {
+                font-size: 58px;
+                color: #004BA9;
+                margin-top: 6%;
+                margin-bottom: 6%;
+            }
+            .disponibilidad-ios {
+                margin-bottom: 5%;
+                background-color: #D0D0D0;
+                padding-top: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-bottom: 1px;
+            }
         }
-
+        
         .otros-articulos {
-            margin-top: 2%;
+            margin-top: 1%;
             margin-left: 6%;
             margin-right: 3%;
-
+            
             .titulo-articulos {
                 .titulo {
                     font-size: 26px;
@@ -89,15 +153,18 @@
 
 
                     .relleno {
+                        display: block;
+                        margin-bottom: 22px;
                         color: #004BA9;
                         font-weight: 500;
-                        font-size: 18px;
+                        font-size: 19px;
                         font-weight: 500;
                         font-family: Arial, Helvetica, sans-serif;
                     }
                 }
             }
         }
+
     }
 }
 
@@ -120,10 +187,6 @@
 
                 .cuerpo-texto {
                     font-size: 18px;
-                }
-
-                .contenedor-img {
-                    .img-pines {}
                 }
             }
 
@@ -198,7 +261,7 @@
             }
 
             .otros-articulos {
-                margin-top: 8%;
+                // margin-top: 8%;
                 margin-left: 2%;
                 margin-right: 0%;
                 width: 34%;
@@ -253,11 +316,15 @@
                 display: block;
                 background-color: #FAFAFA;
                 width: 100%;
+                position: sticky;
+                top: 0;
+                z-index: 1000;
 
                 .contenedor-titulo {
                     display: flex;
                     justify-content: space-between;
                     padding: 16px;
+
                     .titulo {
                         color: #004BA9;
                         font-size: 22px;
@@ -266,16 +333,18 @@
                         position: relative;
                         top: 10px;
                     }
-                    .contenedor-icon{
+
+                    .contenedor-icon {
                         position: relative;
                         top: 6px;
+                        cursor: pointer;
                     }
                 }
-                
+
                 .contenedor-relleno {
                     display: block;
                     background-color: #FAFAFA;
-                    
+
                     .relleno {
                         padding: 8px;
                         display: block;
@@ -313,6 +382,17 @@
 
             .otros-articulos {
                 display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .about {
+
+        .cuerpo-about-info {
+            .titulo-pinterest {
+                font-size: 45px;
             }
         }
     }

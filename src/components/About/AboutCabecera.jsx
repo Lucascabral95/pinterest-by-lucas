@@ -4,8 +4,9 @@ import { GrFormPreviousLink } from "react-icons/gr";
 import { GrFormNextLink } from "react-icons/gr";
 import { useState, useEffect } from "react";
 import { storeZustand } from "../../zustand.jsx";
+import AboutTitulo from "./AboutTitulo.jsx";
 
-export default function AboutCabecera() {
+export default function AboutCabecera(props) {
     const [categoriaActual, setCategoriaActual] = useState(null)
     const { cateActual, setCateActual } = storeZustand()
 
@@ -34,11 +35,8 @@ export default function AboutCabecera() {
 
     return (
         <div className="about">
-            <div className="contenedor-titlo">
-                <div className="contenedor">
-                    <h1 className="titulo-pinterest"> Todo acerca de Pinterest </h1>
-                </div>
-            </div>
+            
+            <AboutTitulo titulo={`${props.navbar}`} />
 
             <div className="contenedor-informacion">
                 <div className="secciones">
