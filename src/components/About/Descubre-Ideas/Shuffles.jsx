@@ -1,4 +1,9 @@
 import BodyAbout from "../BodyAbout";
+import { FaArrowRight } from "react-icons/fa6";
+import { FaEllipsisH } from "react-icons/fa";
+import { LuShare } from "react-icons/lu";
+import { FaStar } from "react-icons/fa";
+import { IoMdInformationCircle } from "react-icons/io";
 
 export default function Shuffles() {
 
@@ -18,7 +23,7 @@ export default function Shuffles() {
                         <p className="cuerpo-texto">1) Inicia sesión en tu cuenta de Shuffles en tu dispositivo iOS.</p>
                         <p className="cuerpo-texto">2) Toca el icono <a href="#" style={{ fontWeight: 600 }}>del signo mas</a> en el centro de la pantalla.</p>
                         <p className="cuerpo-texto">3) Toca los iconos situados en la parte inferior de la pantalla para seleccionar imágenes o stickers que quieras agregar a Shuffles.</p>
-                        <p className="cuerpo-texto">4) Toca el  icono de la flecha hacia la derecha  en la parte superior derecha de la pantalla.</p>
+                        <p className="cuerpo-texto">4) Toca el <FaArrowRight size={20} color="#004BA9" /> en la parte superior derecha de la pantalla.</p>
                         <p className="cuerpo-texto">5) Agregar grupos o amigos </p>
                         <p className="cuerpo-texto">6) Toca <a href="#" style={{ fontWeight: 600 }}>Publicar publicamente</a> o mueve el control situado junto a <a href="#" style={{ fontWeight: 600 }}>Publico</a> para guardarlo de forma privada.</p>
                         <div className="d-flex web-android-ios">
@@ -30,7 +35,7 @@ export default function Shuffles() {
                         <h2 className="titulo-pinterest">Hacer un Shuffle público o privado</h2>
                         <p className="cuerpo-texto">1) Inicia sesión en tu cuenta de Shuffles en tu dispositivo iOS. </p>
                         <p className="cuerpo-texto">2) Toca tu Shuffle. </p>
-                        <p className="cuerpo-texto">3) Toca el icono de los puntos suspensivos en la esquina inferior derecha de la pantalla. </p>
+                        <p className="cuerpo-texto">3) Toca el <FaEllipsisH size={20} color="#004BA9" /> en la esquina inferior derecha de la pantalla. </p>
                         <p className="cuerpo-texto">4) Selecciona tu configuración de privacidad: </p>
                         <ul style={{ marginLeft:"4%" }}>
                             <li>Para Shuffles públicos, selecciona <a href="#" style={{ fontWeight: 600 }}>Hacer Shuffle privado</a> y luego <a href="#" style={{ fontWeight: 600 }}>Hacer Privado</a>.</li>
@@ -46,7 +51,7 @@ export default function Shuffles() {
                         <h2 className="titulo-pinterest">Hacer un Shuffle público o privado</h2>
                         <p className="cuerpo-texto">1) Inicia sesión en tu cuenta de Shuffles en tu dispositivo iOS. </p>
                         <p className="cuerpo-texto">2) Toca tu Shuffle. </p>
-                        <p className="cuerpo-texto">3) Toca </p>
+                        <p className="cuerpo-texto">3) Toca <LuShare size={20} color="#004BA9" /> </p>
                         <p className="cuerpo-texto">4) Toca <a href="#" style={{ textDecoration: "underline", fontWeight: 600 }}>Exportar Shuffle</a> par exportar el Shuffle o <a href="#" style={{ textDecoration: "underline", fontWeight: 600 }}>Compartir un enlace a Shuffle</a> para compartir un enlace al Shuffle. </p>
                         <div className="d-flex web-android-ios">
                             <a href="#" style={{ textDecoration: "underline" }}>WEB</a>
@@ -58,8 +63,8 @@ export default function Shuffles() {
                         <p className="cuerpo-texto">1) Inicia sesión en tu cuenta de Shuffles en tu dispositivo iOS. </p>
                         <p className="cuerpo-texto">2) Toca tu Shuffle. </p>
                         <p className="cuerpo-texto">3) Toca de nuevo Shuffle para que aparezca la lista de opciones. </p>
-                        <p className="cuerpo-texto">4) Toca el icono de estrella para marcarlo como favorito. </p>
-                        <p className="cuerpo-texto">5) Selecciona el icono de información para ver el Pin original asociado con Shuffle. </p>
+                        <p className="cuerpo-texto">4) Toca el <FaStar size={20} color="#004BA9" /> para marcarlo como favorito. </p>
+                        <p className="cuerpo-texto">5) Selecciona el <IoMdInformationCircle size={20} color="#004BA9" /> para ver el Pin original asociado con Shuffle. </p>
                         <div className="d-flex web-android-ios">
                             <a href="#" style={{ textDecoration: "underline" }}>WEB</a>
                             <a href="#" style={{ textDecoration: "underline" }}>ANDROID</a>
@@ -70,7 +75,7 @@ export default function Shuffles() {
                         <p className="cuerpo-texto">Si eliminas tu cuenta de Shuffles, también se eliminará tu cuenta de Pinterest, ya que el uso de Shuffles es una extensión de tu cuenta de Pinterest.
                             Esto es permanente y significa que se eliminarán los datos de tu cuenta, incluidos los Shuffles, Pines y tableros.Si quieres eliminar tu cuenta, sigue estos pasos:</p>
                         <p className="cuerpo-texto">1) Inicia sesión en tu cuenta de Shuffles en tu dispositivo iOS. </p>
-                        <p className="cuerpo-texto">2) Toca el icono de los puntos suspensivos en la parte superior derecha de la pantalla. </p>
+                        <p className="cuerpo-texto">2) Toca el <FaEllipsisH size={20} color="#004BA9" /> en la parte superior derecha de la pantalla. </p>
                         <p className="cuerpo-texto">3) Toca Cuenta. </p>
                         <p className="cuerpo-texto">4) Toca <a href="#" style={{ fontWeight: 600 }}>Eliminar tus datos y tu cuenta</a>. </p>
                         <p className="cuerpo-texto">5) Toca <a href="#" style={{ fontWeight: 600 }}>Send account deletion email</a> (Enviar correo electrónico de eliminación de cuenta) y sigue los pasos que se indican en ese correo. </p>

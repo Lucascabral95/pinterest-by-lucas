@@ -1,6 +1,8 @@
 import BodyAbout from "../BodyAbout";
+import { useParams } from "react-router-dom";
 
 export default function IdeasPinterest() {
+const { id } = useParams()
 
     return (
         <div >

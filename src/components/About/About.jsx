@@ -339,8 +339,8 @@ export default function About() {
                     </div>
                     <div className="contenedor-relleno" style={{ display: activeModal.introduccion ? "block" : "none" }}>
                         <Link to={'/about'} className="relleno" style={{ textDecoration: "underline" }} >Todo acerca de Pinterest</Link>
-                        <Link to={'/cuenta/pinterest'} className="relleno">Obten una cuenta de Pinterest</Link>
-                        <Link to={'/tipos/pines'} className="relleno">Tipos de Pines en Pinterest</Link>
+                        <Link to={'/about/cuenta/pinterest'} className="relleno">Obten una cuenta de Pinterest</Link>
+                        <Link to={'/about/tipos/pines'} className="relleno">Tipos de Pines en Pinterest</Link>
                     </div>
                     <hr color="#004BA9" />
                     <div className="contenedor-articulos">
@@ -350,10 +350,10 @@ export default function About() {
                         </div>
                     </div>
                     <div className="contenedor-relleno" style={{ display: activeModal.ideas ? "block" : "none" }}>
-                        <Link to={"/descubre/ideas"} className="relleno">Descubre ideas en Pinterest</Link>
-                        <Link to={"/explora/feed"} className="relleno">Explora el feed de inicio</Link>
-                        <Link  to={"/ideas/pinterest"}className="relleno">Buscar ideas en Pinterest</Link>
-                        <Link to={"/shuffles"} className="relleno">Shuffles</Link>
+                        <Link to={"/about/descubre/ideas"} className="relleno">Descubre ideas en Pinterest</Link>
+                        <Link to={"/about/explora/feed"} className="relleno">Explora el feed de inicio</Link>
+                        <Link  to={"/about/ideas/pinterest"}className="relleno">Buscar ideas en Pinterest</Link>
+                        <Link to={"/about/shuffles"} className="relleno">Shuffles</Link>
                     </div>
                     <hr color="#004BA9" />
                     <div className="contenedor-articulos">
