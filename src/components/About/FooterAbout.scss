@@ -75,6 +75,7 @@
                     font-size: 44px;
                     color: #004BA9;
                     font-weight: 600;
+                    font-size: 18px
                 }
             }
 
@@ -85,6 +86,325 @@
                 align-items: center;
                 position: relative;
                 bottom: 6px;
+            }
+        }
+    }
+
+    .contenedor-mayor {
+        background-color: #E9D7BE;
+        width: 100%;
+        margin: auto;
+        height: 530px;
+
+        .contenedor-grande {
+            background-color: #E9D7BE;
+            height: 397px;
+            margin: auto;
+            max-width: 1248px;
+            padding-top: 3%;
+            display: flex;
+
+            .logo-idiomas {
+                width: 396px;
+                height: 397px;
+
+                .logo {
+                    margin-bottom: 12%;
+
+                    img {
+                        width: 165px;
+                        height: auto;
+                    }
+                }
+
+                .idiomas {
+                    .lenguage {
+                        display: block;
+                        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                        color: #004BA9;
+                        font-weight: 700;
+                        font-size: 18px;
+                    }
+
+                    #idiomas {
+                        margin-top: 2%;
+                        cursor: pointer;
+                        width: 297px;
+                        height: 57px;
+                        display: block;
+                        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                        color: #004BA9;
+                        border: none;
+                        border-radius: 12px;
+                        padding-left: 12px;
+                        padding-right: 48px;
+                        font-size: 18px;
+                    }
+
+                }
+            }
+
+            .nosotros-politicas-informacion {
+                display: flex;
+                margin-left: 5vw;
+
+                .nosotros {
+                    .contenido-titulo {
+                        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                        color: #004BA9;
+                        font-weight: 700;
+                        font-size: 18px;
+                    }
+
+                    .contenido-texto {
+                        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                        color: #004BA9;
+                        font-weight: 500;
+                        font-size: 18px;
+
+                        &:hover {
+                            color: rgba(0, 102, 255, 0.774);
+                            text-decoration: underline;
+                        }
+                    }
+                }
+
+                .uno {
+                    width: 260px;
+                }
+
+                .dos {
+                    width: 236px;
+                }
+
+                .tres {
+                    width: 200px;
+                }
+            }
+        }
+
+        .contenedor-marca {
+            max-width: 1248px;
+            margin: auto;
+            display: flex;
+            padding-top: 3.8%;
+
+            .marca-texto {
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                color: #004BA9;
+                font-weight: 600;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (min-width: 908px) and (max-width: 1279px) {
+    .footer-about {
+
+        .contenedor-mayor {
+            margin: auto;
+            height: 500px;
+            padding: 3% 2%;
+
+            .contenedor-grande {
+                height: 397px;
+                margin: auto;
+                max-width: 1248px;
+                padding-top: 3%;
+                display: flex;
+
+                .logo-idiomas {
+                    width: 200px;
+                    height: 397px;
+
+                    .logo {
+                        margin-bottom: 12%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        img {
+                            width: 165px;
+                            height: auto;
+                        }
+                    }
+
+                    .idiomas {
+                        width: 200px;
+
+                        .lenguage {
+                            display: block;
+                            font-size: 18px;
+                            margin: auto;
+                        }
+
+                        #idiomas {
+                            margin-top: 2%;
+                            width: 198px;
+                            margin: auto;
+                            height: 57px;
+                            display: block;
+                            padding-left: 12px;
+                            padding-right: 48px;
+                            font-size: 18px;
+                        }
+
+                    }
+                }
+
+                .nosotros-politicas-informacion {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-left: 2vw;
+
+                    .nosotros {
+                        margin-right: 0.5vw;
+                        margin-left: 0.5vw;
+
+                        .contenido-titulo {
+                            font-size: 18px;
+                        }
+
+                        .contenido-texto {
+                            font-size: 18px;
+
+                            &:hover {
+                                color: rgba(0, 102, 255, 0.774);
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+
+                    .uno {
+                        width: 227px;
+                    }
+
+                    .dos {
+                        width: 206px;
+                    }
+
+                    .tres {
+                        width: 168px;
+                    }
+                }
+            }
+
+            .contenedor-marca {
+                max-width: 1248px;
+                margin: auto;
+                display: flex;
+                padding-top: 0%;
+
+                .marca-texto {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 907px) {
+    .footer-about {
+
+        .contenedor-mayor {
+            margin: auto;
+            height: 630px;
+            padding: 3% 2%;
+
+            .contenedor-grande {
+                height: 397px;
+                margin: auto;
+                max-width: 1248px;
+                padding-top: 3%;
+                display: flex;
+
+                .logo-idiomas {
+                    width: 200px;
+                    height: 397px;
+
+                    .logo {
+                        margin-bottom: 12%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        img {
+                            width: 165px;
+                            height: auto;
+                        }
+                    }
+
+                    .idiomas {
+                        width: 200px;
+
+                        .lenguage {
+                            display: block;
+                            font-size: 18px;
+                            margin: auto;
+                        }
+
+                        #idiomas {
+                            margin-top: 2%;
+                            width: 198px;
+                            margin: auto;
+                            height: 57px;
+                            display: block;
+                            padding-left: 12px;
+                            padding-right: 48px;
+                            font-size: 18px;
+                        }
+
+                    }
+                }
+
+                .nosotros-politicas-informacion {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-left: 8vw;
+
+                    .nosotros {
+                        margin-right: 0.5vw;
+                        margin-left: 0.5vw;
+
+                        .contenido-titulo {
+                            font-size: 18px;
+                        }
+
+                        .contenido-texto {
+                            font-size: 18px;
+
+                            &:hover {
+                                color: rgba(0, 102, 255, 0.774);
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+
+                    .uno {
+                        width: 227px;
+                    }
+
+                    .dos {
+                        width: 206px;
+                    }
+
+                    .tres {
+                        width: 168px;
+                        padding-top: 2%;
+                    }
+                }
+            }
+
+            .contenedor-marca {
+                max-width: 1248px;
+                display: flex;
+                margin: auto;
+                padding-top: 22%;
+
+                .marca-texto {
+                    font-size: 14px;
+                }
             }
         }
     }
@@ -161,6 +481,185 @@
                     position: relative;
                     bottom: 6px;
                 }
+            }
+        }
+
+        .contenedor-mayor {
+            margin: auto;
+            height: 550px;
+            padding: 3% 2%;
+
+            .contenedor-grande {
+                height: 397px;
+                margin: auto;
+                max-width: 1248px;
+                padding-top: 3%;
+                display: block;
+
+                .logo-idiomas {
+                    width: 100%;
+                    height: 156px;
+                    margin-bottom: 3%;
+
+                    .logo {
+                        margin-bottom: 4%;
+
+                        img {
+                            width: 165px;
+                            height: auto;
+                        }
+                    }
+
+                    .idiomas {
+                        width: 100%;
+
+                        .lenguage {
+                            display: block;
+                            font-size: 18px;
+                            margin: auto;
+                        }
+
+                        #idiomas {
+                            width: 100%;
+                            margin: auto;
+                            height: 57px;
+                            font-size: 16px;
+                        }
+
+                    }
+                }
+
+                .nosotros-politicas-informacion {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-left: 0;
+                    padding-left: 0;
+
+                    .nosotros {
+
+                        .contenido-titulo {
+                            font-size: 16px;
+                        }
+
+                        .contenido-texto {
+                            font-size: 14px;
+
+                            &:hover {
+                                color: rgba(0, 102, 255, 0.774);
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+
+                    .uno {
+                        width: 202px;
+                    }
+
+                    .dos {
+                        width: 183px;
+                    }
+
+                    .tres {
+                        width: 150px;
+                    }
+                }
+            }
+
+            .contenedor-marca {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 552px) {
+    .footer-about {
+
+        .contenedor-mayor {
+            margin: auto;
+            height: 730px;
+            padding: 3% 3%;
+
+            .contenedor-grande {
+                height: 397px;
+                margin: auto;
+                max-width: 1248px;
+                padding-top: 3%;
+                display: block;
+
+                .logo-idiomas {
+                    width: 100%;
+                    height: 156px;
+                    margin-bottom: 3%;
+
+                    .logo {
+                        margin-bottom: 4%;
+
+
+                        img {
+                            width: 165px;
+                            height: auto;
+                        }
+                    }
+
+                    .idiomas {
+                        width: 100%;
+
+                        .lenguage {
+                            display: block;
+                            font-size: 18px;
+                            margin: auto;
+                        }
+
+                        #idiomas {
+                            width: 100%;
+                            margin: auto;
+                            height: 57px;
+                            font-size: 16px;
+                        }
+
+                    }
+                }
+
+                .nosotros-politicas-informacion {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    margin-left: 0;
+                    padding-left: 0;
+
+                    .nosotros {
+
+                        .contenido-titulo {
+                            font-size: 16px;
+                        }
+
+                        .contenido-texto {
+                            font-size: 14px;
+
+                            &:hover {
+                                color: rgba(0, 102, 255, 0.774);
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+
+                    .uno {
+                        width: 202px;
+                    }
+
+                    .dos {
+                        width: 183px;
+                    }
+
+                    .tres {
+                        width: 150px;
+                    }
+                }
+            }
+
+            .contenedor-marca {
+                display: none;
             }
         }
     }
@@ -308,5 +807,98 @@
                 }
             }
         }
-    }    
+    }
+}
+
+@media (max-width: 415px) {
+    .footer-about {
+
+        .contenedor-mayor {
+            margin: auto;
+            height: 605px;
+            padding: 3% 3%;
+
+            .contenedor-grande {
+                height: 397px;
+                margin: auto;
+                max-width: 1248px;
+                padding-top: 3%;
+                display: block;
+
+                .logo-idiomas {
+                    width: 100%;
+                    height: 156px;
+                    margin-bottom: 3%;
+
+                    .logo {
+                        margin-bottom: 4%;
+
+
+                        img {
+                            width: 165px;
+                            height: auto;
+                        }
+                    }
+
+                    .idiomas {
+                        width: 100%;
+
+                        .lenguage {
+                            display: block;
+                            font-size: 18px;
+                            margin: auto;
+                        }
+
+                        #idiomas {
+                            width: 100%;
+                            margin: auto;
+                            height: 57px;
+                            font-size: 16px;
+                        }
+
+                    }
+                }
+
+                .nosotros-politicas-informacion {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    margin-left: 0;
+                    padding-left: 0;
+
+                    .nosotros {
+
+                        .contenido-titulo {
+                            font-size: 16px;
+                        }
+
+                        .contenido-texto {
+                            font-size: 14px;
+
+                            &:hover {
+                                color: rgba(0, 102, 255, 0.774);
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+
+                    .uno {
+                        width: 33%;
+                    }
+
+                    .dos {
+                        width: 33%;
+                    }
+
+                    .tres {
+                        width: 33%;
+                    }
+                }
+            }
+
+            .contenedor-marca {
+                display: none;
+            }
+        }
+    }
 }
