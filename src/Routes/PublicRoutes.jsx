@@ -23,9 +23,23 @@ import InterPint from "../components/About/InteraccionPin/InterPin.jsx"
 import EncontraTuPerfil from "../components/About/ConfiguracionPerfil/EncontraTuPerfil.jsx"
 import ModificarTuPerfil from "../components/About/ConfiguracionPerfil/ModificaTuPerfil.jsx"
 import PerfilPrivadoPublico from "../components/About/ConfiguracionPerfil/PerfilPrivadoPublico.jsx"
-import InforPersonal from "../components/About/ConfiguracionPerfil/InfoPersonal.jsx"
+import ActualizarAplicacion from "../components/About/PinterestDispositivo/ActualizarAplicacion.jsx"
+import AgregarWidget from "../components/About/PinterestDispositivo/AgregaWidget.jsx"
+import LectorPantalla from "../components/About/PinterestDispositivo/LectorPantalla.jsx"
+import PinterestLite from "../components/About/PinterestDispositivo/PinterestLite.jsx"
+import ModoNoche from "../components/About/PinterestDispositivo/ModoNoche.jsx"
+import AutorizacionesIOS from "../components/About/PinterestDispositivo/AutorizacionesIOS.jsx"
+import AutorizacionesAndroid from "../components/About/PinterestDispositivo/AutorizacionesAndroid.jsx"
+import AppStore from "../components/About/PinterestDispositivo/AppStore.jsx"
+import ConfiguracionesAutomaticas from "../components/About/FuncionesHerramientas/ConfiguracionesAutomatica.jsx"
+import ComprarPinesProductos from "../components/About/FuncionesHerramientas/ComprarPinesProductos.jsx"
+import FuncionPrueba from "../components/About/FuncionesHerramientas/FuncionPrueba.jsx"
+import TablerosSecretos from "../components/About/FuncionesHerramientas/TablerosSecretos.jsx"
+import InformePinterest from "../components/About/FuncionesHerramientas/InformePinterest.jsx"
+import ListaCompras from "../components/About/FuncionesHerramientas/ListaCompras.jsx"
+import TablerosSecretosDos from "../components/About/FuncionesHerramientas/TablerosSecretos.jsx"
 
-export default function PublicRoutes() {      
+export default function PublicRoutes() {
 
     return (
 
@@ -44,9 +58,7 @@ export default function PublicRoutes() {
                 <Route path='/scroll' element={<Scroll />} />
                 <Route path='/favoritas' element={<ImagenesFavoritas />} />
                 <Route path='/empresa' element={<Information />} />
-
-
-                <Route path='/about' element={<MainAbout />} />                
+                <Route path='/about' element={<MainAbout />} />
                 <Route path='/about/tipos/pines' element={<TiposDePines />} />
                 <Route path='/about/tipos/pines' element={<TiposDePines />} />
                 <Route path='/about/cuenta/pinterest' element={<CuentaDePinterest />} />
@@ -54,16 +66,29 @@ export default function PublicRoutes() {
                 <Route path='/about/explora/feed' element={<ExploraFeed />} />
                 <Route path='/about/ideas/pinterest' element={<IdeasPinterest />} />
                 <Route path='/about/shuffles' element={<Shuffles />} />
-            
                 <Route path='/about/reacciones' element={<Reacciones />} />
                 <Route path='/about/agregar/administrar' element={<AgregarAdministrar />} />
                 <Route path='/about/inter/pin' element={<InterPint />} />
-
                 <Route path='/about/encontrar/tu/perfil' element={<EncontraTuPerfil />} />
                 <Route path='/about/modificar/tu/perfil' element={<ModificarTuPerfil />} />
                 <Route path='/about/perfil/privado/publico' element={<PerfilPrivadoPublico />} />
-                <Route path='/about/info/personal' element={<InforPersonal />} />
-
+                <Route path='/about/funcion/prueba' element={<FuncionPrueba />} />
+                <Route path='/about/tableros/secretos' element={<TablerosSecretos />} />
+                <Route path='/about/informe/pinterest' element={<InformePinterest />} />
+                <Route path='/about/actualizar/aplicacion' element={<ActualizarAplicacion />} />
+                <Route path='/about/agregar/widget' element={<AgregarWidget />} />
+                <Route path='/about/lector/pantalla' element={<LectorPantalla />} />
+                <Route path='/about/pinterest/lite' element={<PinterestLite />} />
+                <Route path='/about/modo/noche' element={<ModoNoche />} />
+                <Route path='/about/autorizaciones/ios' element={<AutorizacionesIOS />} />
+                <Route path='/about/autorizaciones/android' element={<AutorizacionesAndroid />} />
+                <Route path='/about/appstore' element={<AppStore />} />
+                <Route path='/about/configuraciones/automaticas' element={<ConfiguracionesAutomaticas />} />
+                <Route path='/about/comprar/pines/productos' element={<ComprarPinesProductos />} />
+                <Route path='/about/lista/compras' element={<ListaCompras />} />
+                <Route path='/about/funcion/prueba' element={<FuncionPrueba />} />
+                <Route path='/about/tableros/secretos/dos' element={<TablerosSecretosDos />} />
+                <Route path='/about/informe/pinterest' element={<InformePinterest />} />
 
             </Routes>
 

@@ -24,5 +24,3 @@ export default function EncontraTuPerfil() {
         </div>
     )
 }
-
-<a href="#" style={{ fontWeight: 600 }}></a>
