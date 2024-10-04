@@ -16,6 +16,7 @@ Caractterísticas PrincipalesÑ
 - **Detalles de la Imagen**: Muestra información relevante de cada foto, incluyendo título, autor y enlaces a sus perfiles en Instagram y Unsplash.
 - **Gestión de Datos Personales**: Permite a los usuarios ingresar y modificar sus datos personales almacenados en localStorage.
 - **Almacenamiento de Imágenes Favoritas**: Guarda imágenes favoritas en localStorage para acceso rápido y visualización.
+- **Categorías Más Buscadas**: Permite a los usuarios filtrar imágenes según las categorías más buscadas, facilitando una búsqueda más eficiente y específica.
 - **Múltiples Landing Pages**: Incluye varias landing pages optimizadas para ofrecer una navegación fluida y atractiva sobre diferentes aspectos del servicio.
 
 ## Conclusión
