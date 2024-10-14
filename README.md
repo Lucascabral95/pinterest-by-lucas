@@ -1,17 +1,8 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-# Pinterest Clone By Lucas Cabral
+# Clone de Pinterest
 
 Este proyecto ha sido copiado desde cero por mí y presenta diversas secciones inspiradas en la página oficial de Pinterest.
 
-Caractterísticas PrincipalesÑ
+Características PrincipalesÑ
 - **Búsqueda de Imágenes**: Busca imágenes de alta calidad mediante la API de Unsplash usando prompts.
 - **Detalles de la Imagen**: Muestra información relevante de cada foto, incluyendo título, autor y enlaces a sus perfiles en Instagram y Unsplash.
 - **Gestión de Datos Personales**: Permite a los usuarios ingresar y modificar sus datos personales almacenados en localStorage.
@@ -22,3 +13,18 @@ Caractterísticas PrincipalesÑ
 ## Conclusión
 
 Este proyecto refleja mis habilidades en desarrollo web, así como mi capacidad para implementar soluciones creativas y efectivas. A través de este clone de Pinterest, he podido aplicar mis conocimientos en APIs, gestión de datos y diseño de interfaces. Estoy abierto a cualquier comentario o sugerencia que me ayude a mejorar. ¡Gracias por visitar mi repositorio!
+
+🛠️ Tecnologías Utilizadas
+-- **React.js**: Utilizado para crear una interfaz de usuario dinámica y responsiva, permitiendo una navegación fluida entre las diferentes secciones de búsqueda, detalles de imágenes y categorías.
+- **Unsplash API**: Implementada para obtener imágenes de alta calidad en tiempo real, proporcionando una amplia gama de fotos basadas en los prompts de búsqueda del usuario.
+- **LocalStorage**: Utilizado para almacenar los datos personales de los usuarios y sus imágenes favoritas, permitiendo que persistan entre sesiones sin necesidad de una base de datos externa.
+- **React Router**: Integrado para gestionar la navegación entre las landing pages, las búsquedas y las categorías, asegurando una transición fluida entre las diferentes partes del sitio.
+- **Axios**: Usado para hacer peticiones a la API de Unsplash de forma eficiente y gestionar la búsqueda y carga de imágenes en la aplicación.
+
+## 📬 Contacto
+
+Si tenés alguna pregunta o sugerencia, no dudes en contactarme a través de lucassimple@hotmail.com o https://github.com/Lucascabral95
+
+### Notas: 
+
+- Añadí secciones como **Tecnologías Utilizadas**, **Descripción**, **Conclusión**, **Características Principales** y **Contacto** para hacer el README más completo.
