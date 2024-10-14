@@ -1,5 +1,16 @@
 # Clone de Pinterest
 
+## Instalación
+
+Instalar generador-de-colores con npm
+
+```bash
+  git clone https://github.com/Lucascabral95/pinterest-by-lucas.git
+  cd pinterest-project
+  npm install
+  npm run dev
+```
+
 Este proyecto ha sido copiado desde cero por mí y presenta diversas secciones inspiradas en la página oficial de Pinterest.
 
 Características PrincipalesÑ
